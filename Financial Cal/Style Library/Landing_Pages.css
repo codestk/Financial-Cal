@@ -1,0 +1,68 @@
+﻿html {
+    overflow-y: scroll; 
+}
+
+#divRightContent a:link {
+	color:#808080 !important;
+	text-decoration:underline !important;
+}
+
+#divRightContent a:visited {
+	color:#808080 !important;
+	text-decoration:underline !important;
+}
+
+#divRightContent a:hover{
+	color:#F09100 !important;
+	text-decoration:underline !important;
+}
+
+.ft_Quick_News_btn_IE8{
+	background-color:#EEEEEE !important;
+}
+
+#divCrop{
+	width:990px;
+	height:270px;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+}
+
+#divSubmenu{
+	position:relative;
+	top:169px;
+	left:110px;
+	padding:0px;
+	margin:0px;	
+}
+
+.divBlueBG{
+	clear:both;
+	background-color:#6ca3db;
+	height:100px;
+	width:990px;
+	position:absolute;
+	left:-110px;
+}
+
+#ulSubMenu{
+	padding:0px;
+	margin:0px;
+}
+
+#ulSubMenu li{
+	list-style:none;
+	display:inline;
+}
+
+.css_divSubMenu{
+	opacity:0;
+	position:absolute;
+}
+
+.imgSubMenu{
+	position:relative;
+	padding-right:100px;
+	top:20px;
+} 

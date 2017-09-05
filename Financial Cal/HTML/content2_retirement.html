@@ -1,0 +1,214 @@
+<link rel="stylesheet" type="text/css" href="/Style Library/Tax/Thai/tax.css">
+
+<div id="divRetirement1" style="height:350px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/retirement_1.png);position:relative;display:block;background-size: contain;" class="css_DivRetire">
+  <div style="position:absolute;top:6px;left:225px;">
+    <div style="position: absolute; left: 2px; top: 14px; width: 73px;">
+      <input id="txt_RT_A" type="text" class="cssInput" value="0"  style="width:50px;" maxlength="3">
+    </div>
+    <div style="position: absolute; top: 54px; left: 3px;">
+      <input id="txt_RT_B" type="text" class="cssInput"  style="width:50px;" value="0" maxlength="3">
+    </div>
+    <div style="position: absolute; top: 95px; left: 2px;">
+      <input id="txt_RT_C" type="text" class="cssInput" style="width:50px;" value="0" maxlength="3">
+    </div>
+  </div>
+  <div style="position:absolute;top:6px;left:718px;">
+    <div style="position: absolute; left: -133px; top: 14px;">
+      <input id="txt_RT_D" type="text" class="cssInput"style="width:170px;" value="0" maxlength="11">
+    </div>
+    <div style="position: absolute; top: 54px; left: -133px;">
+      <input id="txt_RT_F" type="text" class="cssInput" style="width:170px;" value="0" maxlength="11">
+    </div>
+    <div style="position: absolute; top: 95px; left: -132px;">
+      <input id="txt_RT_E" class="cssInput" type="text" value="0" maxlength="5"  style="width:170px;text-align:center;"/>
+    </div>
+    <div style="position: absolute; top: 136px; left: -134px;">
+      <input name="txt_RT_U" type="text" class="cssInput" id="txt_RT_U"  style="width:170px;text-align:center;" value="0" maxlength="5"/>
+    </div>
+  </div>
+  <!-- Result Begin -->
+  <div style="position: absolute; top: 0px; left: 0px;">
+    <input id="txt_RT_G" class="cssOutput cssOutG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 347px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_CB" class="cssOutput cssOutCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 825px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_H" type="text" class="cssOutput cssOutH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 308px; top: 248px;" disabled="disabled">
+    <input id="txt_RT_I" type="text"class="cssOutput cssOutI"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 778px; top: 248px;" disabled="disabled">
+  </div>
+  <!-- Result End --> 
+  <!-- Error Begin -->
+  <div id="divError" class="cssError" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retirement_cong.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_error_H" type="text"class="cssOutput cssErrorH"  style="width:260px;;text-align:center;font-size:25px;position: absolute; left: 235px; top: 53px;" disabled="disabled">
+    <input id="txt_RT_error_G" type="text"class="cssOutput cssErrorG"  style="width:180px;text-align:center;font-size:25px;position: absolute; left: 777px; top: 53px;" disabled="disabled"></div>
+  <!-- Error End --> 
+  <!-- NAN Begin -->
+  <div id="divNan" class="cssNan" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_nan.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_Nan_G" class="cssOutput cssNanG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 400px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_CB" class="cssOutput cssNanCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 715px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_H" type="text" class="cssOutput cssNanH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 433px; top: 52px;" disabled="disabled">
+  </div>
+  <!-- NAN End -->
+  <!-- Infinity Begin -->
+  <div id="divInfinity" class="cssInfinity" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_infinity_value.png); position: absolute; display: none; background-size: contain;">
+      <input id="txt_RT_G" type="text"class="cssOutput cssInifG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 471px; top: 3px; width: 270px; height: 55px;" disabled="disabled">
+      <input id="txt_RT_error" type="text"class="cssOutput cssInifError"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 475px; top: 53px; width: 271px;" disabled="disabled">
+  </div>  
+  <!-- Infinity End -->
+  <div id="divNext2" style="width: 141px; height: 44px; position: absolute; left: 838px; top: 18px;cursor:pointer;" onClick="Retire_changeSubMenu(2);"></div>
+  <div style="position: absolute; top: 318px; left: 403px;">
+    <input type="text" id="txt_show_rate1" class="cssOutput" value="7.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+  <div style="position: absolute; top: 318px; left: 700px;">
+    <input type="text" id="txt_show_rate_retirement1" class="cssOutput" value="8.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+</div>
+<div id="divRetirement2" style="height:350px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/retirement_2.png);position:relative;display:none;background-size: contain;" class="css_DivRetire">
+  <div style="position:absolute;top:10px;left:225px;">
+    <div style="position: absolute; top: 15px; left: 256px;">
+      <input name="txt_J1" type="text" class="cssInput" id="txt_J1"  style="width:170px;" value="0" maxlength="11">
+    </div>
+    <div style="position: absolute; top: 45px; left: 256px;">
+      <input name="txt_J2" type="text" class="cssInput" id="txt_J2"  style="width:170px;" value="0" maxlength="11">
+    </div>
+    <div style="position: absolute; top: 75px; left: 256px;">
+      <input name="txt_J3" type="text" class="cssInput" id="txt_J3" style="width:170px;" value="0" maxlength="5">
+    </div>
+    <div style="position: absolute; top: 105px; left: 256px;">
+      <input name="txt_J4" type="text" class="cssInput" id="txt_J4"  style="width:170px;" value="0" maxlength="5">
+    </div>
+    <div style="position: absolute; top: 135px; left: 256px;">
+      <input name="txt_J5" type="text" class="cssInput" id="txt_J5" style="width:170px;" value="0" maxlength="5">
+    </div>
+  </div>
+  <!-- Result Begin -->
+  <div style="position: absolute; top: 0px; left: 0px;">
+    <input id="txt_RT_G" class="cssOutput cssOutG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 347px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_CB" class="cssOutput cssOutCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 825px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_H" type="text" class="cssOutput cssOutH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 308px; top: 248px;" disabled="disabled">
+    <input id="txt_RT_I" type="text"class="cssOutput cssOutI"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 778px; top: 248px;" disabled="disabled">
+  </div>
+  <!-- Result End --> 
+  <!-- Error Begin -->
+  <div id="divError" class="cssError" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retirement_cong.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_error_H" type="text"class="cssOutput cssErrorH"  style="width:260px;text-align:center;font-size:27px;position: absolute; left: 235px; top: 53px;" disabled="disabled">
+    <input id="txt_RT_error_G" type="text"class="cssOutput cssErrorG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 777px; top: 53px;" disabled="disabled">
+  </div>
+  <!-- Error End --> 
+  <!-- NAN Begin -->
+  <div id="divNan" class="cssNan" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_nan.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_Nan_G" class="cssOutput cssNanG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 400px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_CB" class="cssOutput cssNanCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 715px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_H" type="text" class="cssOutput cssNanH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 433px; top: 52px;" disabled="disabled">
+  </div>
+  <!-- NAN End -->
+  <!-- Infinity Begin -->
+  <div id="divInfinity" class="cssInfinity" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_infinity_value.png); position: absolute; display: none; background-size: contain;">
+      <input id="txt_RT_G" type="text"class="cssOutput cssInifG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 471px; top: 3px; width: 270px; height: 55px;" disabled="disabled">
+      <input id="txt_RT_error" type="text"class="cssOutput cssInifError"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 475px; top: 53px; width: 271px;" disabled="disabled">
+  </div>  
+  <!-- Infinity End -->  
+  <div id="divNext2" style="width: 127px; height: 36px; position: absolute; left: 19px; top: 21px;cursor:pointer;" onClick="Retire_changeSubMenu(1);"></div>
+  <div id="divNext2" style="width: 126px; height: 37px; position: absolute; left: 853px; top: 20px;cursor:pointer;" onClick="Retire_changeSubMenu(3);"></div>
+  <div style="position: absolute; top: 318px; left: 403px;">
+    <input type="text" id="txt_show_rate2" class="cssOutput" value="7.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+  <div style="position: absolute; top: 318px; left: 700px;">
+    <input type="text" id="txt_show_rate_retirement2" class="cssOutput" value="8.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+</div>
+<div id="divRetirement3" style="height:350px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/retirement_3.png);position:relative;display:none;background-size: contain;" class="css_DivRetire">
+  <div style="position:absolute;top:10px;left:225px;">
+    <div style="position: absolute; top: 11px; left: 255px;">
+      <input name="txt_M1" type="text" class="cssInput" id="txt_M1"  style="width:170px;" value="0" maxlength="8">
+    </div>
+    <div style="position: absolute; top: 63px; left: 255px;">
+      <input name="txt_M2" type="text" class="cssInput" id="txt_M2"  style="width:170px;" value="0" maxlength="6">
+    </div>
+    <div style="position: absolute; top: 113px; left: 255px;">
+      <input name="txt_M3" type="text" class="cssInput" id="txt_M3" style="width:170px;" value="0" maxlength="5">
+    </div>
+  </div>
+  <!-- Result Begin -->
+  <div style="position: absolute; top: 0px; left: 0px;">
+    <input id="txt_RT_G" class="cssOutput cssOutG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 347px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_CB" class="cssOutput cssOutCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 825px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_H" type="text" class="cssOutput cssOutH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 308px; top: 248px;" disabled="disabled">
+    <input id="txt_RT_I" type="text"class="cssOutput cssOutI"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 778px; top: 248px;" disabled="disabled">
+  </div>
+  <!-- Result End --> 
+  <!-- Error Begin -->
+  <div id="divError" class="cssError" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retirement_cong.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_error_H" type="text"class="cssOutput cssErrorH"  style="width:260px;text-align:center;font-size:27px;position: absolute; left: 235px; top: 53px;" disabled="disabled">
+    <input id="txt_RT_error_G" type="text"class="cssOutput cssErrorG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 777px; top: 53px;" disabled="disabled"></div>
+  <!-- Error End --> 
+  <!-- NAN Begin -->
+  <div id="divNan" class="cssNan" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_nan.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_Nan_G" class="cssOutput cssNanG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 400px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_CB" class="cssOutput cssNanCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 715px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_H" type="text" class="cssOutput cssNanH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 433px; top: 52px;" disabled="disabled">
+  </div>
+  <!-- NAN End -->
+  <!-- Infinity Begin -->
+  <div id="divInfinity" class="cssInfinity" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_infinity_value.png); position: absolute; display: none; background-size: contain;">
+      <input id="txt_RT_G" type="text"class="cssOutput cssInifG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 471px; top: 3px; width: 270px; height: 55px;" disabled="disabled">
+      <input id="txt_RT_error" type="text"class="cssOutput cssInifError"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 475px; top: 53px; width: 271px;" disabled="disabled">
+  </div>  
+  <!-- Infinity End -->  
+  <div id="divNext2" style="width: 192px; height: 39px; position: absolute; left: 17px; top: 21px;cursor:pointer;" onClick="Retire_changeSubMenu(2);"></div>
+  <div id="divNext2" style="width: 181px; height: 38px; position: absolute; left: 796px; top: 20px;cursor:pointer;" onClick="Retire_changeSubMenu(4);"></div>
+  <div style="position: absolute; top: 318px; left: 403px;">
+    <input type="text" id="txt_show_rate3" class="cssOutput" value="7.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+  <div style="position: absolute; top: 318px; left: 700px;">
+    <input type="text" id="txt_show_rate_retirement3" class="cssOutput" value="8.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+</div>
+<div id="divRetirement4" style="height:350px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/retirement_4.png);position:relative;display:none;background-size: contain;" class="css_DivRetire">
+  <div style="position:absolute;top:10px;left:225px;">
+    <div style="position: absolute; top: 11px; left: 252px;">
+      <input name="txt_K1" type="text" class="cssInput" id="txt_K1"  style="width:170px;" value="0" maxlength="11">
+    </div>
+    <div style="position: absolute; top: 58px; left: 252px;">
+      <input name="txt_K2" type="text" class="cssInput" id="txt_K2"  style="width:170px;" value="0" maxlength="5">
+    </div>
+    <div style="position: absolute; top: 104px; left: 252px;">
+      <input name="txt_K3" type="text" class="cssInput" id="txt_K3" style="width:170px;" value="0" maxlength="11">
+    </div>
+  </div>
+  <!-- Result Begin -->
+  <div style="position: absolute; top: 0px; left: 0px;">
+
+    <input id="txt_RT_G" class="cssOutput cssOutG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 347px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_CB" class="cssOutput cssOutCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 825px; top: 207px;" disabled="disabled">
+    <input id="txt_RT_H" type="text" class="cssOutput cssOutH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 308px; top: 248px;" disabled="disabled">
+    <input id="txt_RT_I" type="text"class="cssOutput cssOutI"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 778px; top: 248px;" disabled="disabled">
+  </div>
+  <!-- Result End --> 
+  <!-- Error Begin -->
+  <div id="divError" class="cssError" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retirement_cong.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_error_H" type="text"class="cssOutput cssErrorH"  style="width:260px;text-align:center;font-size:27px;position: absolute; left: 235px; top: 53px;" disabled="disabled">
+    <input id="txt_RT_error_G" type="text"class="cssOutput cssErrorG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 777px; top: 53px;" disabled="disabled"></div>
+  <!-- Error End --> 
+  <!-- NAN Begin -->
+  <div id="divNan" class="cssNan" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_nan.png); position: absolute; display: none; background-size: contain;">
+    <input id="txt_RT_Nan_G" class="cssOutput cssNanG" type="text" style="width:200px;text-align:center;font-size:27px;position: absolute; left: 400px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_CB" class="cssOutput cssNanCB" type="text" style="width:50px;text-align:center;font-size:27px;position: absolute; left: 715px; top: 12px;" disabled="disabled">
+    <input id="txt_RT_Nan_H" type="text" class="cssOutput cssNanH" style="width:260px;text-align:center;font-size:27px;position: absolute; left: 433px; top: 52px;" disabled="disabled">
+  </div>
+  <!-- NAN End -->
+  <!-- Infinity Begin -->
+  <div id="divInfinity" class="cssInfinity" style="left: 0px; top: 195px; height: 106px !important; width: 985px; background-image: url(/PublishingImages/Tax/Thai/bg_title/retire_infinity_value.png); position: absolute; display: none; background-size: contain;">
+      <input id="txt_RT_G" type="text"class="cssOutput cssInifG"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 471px; top: 3px; width: 270px; height: 55px;" disabled="disabled">
+      <input id="txt_RT_error" type="text"class="cssOutput cssInifError"  style="width:180px;text-align:center;font-size:27px;position: absolute; left: 475px; top: 53px; width: 271px;" disabled="disabled">
+  </div>  
+  <!-- Infinity End -->  
+  <div id="divNext2" style="width: 127px; height: 39px; position: absolute; left: 19px; top: 22px;cursor:pointer;" onClick="Retire_changeSubMenu(3);"></div>
+  <div id="divNext2" style="width: 126px; height: 37px; position: absolute; left: 853px; top: 23px;cursor:pointer;" onClick="Retire_changeSubMenu(0);"></div>
+  <div style="position: absolute; top: 318px; left: 403px;">
+    <input type="text" id="txt_show_rate4" class="cssOutput" value="7.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+  <div style="position: absolute; top: 318px; left: 700px;">
+    <input type="text" id="txt_show_rate_retirement4" class="cssOutput" value="8.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled">
+  </div>
+</div>
+<div>
+  <input id="txtError" type="text" style="width: 200px; text-align: center; font-size: 27px; position: absolute; left: 30px; top: 326px;display:none;">
+</div>

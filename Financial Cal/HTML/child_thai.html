@@ -1,0 +1,74 @@
+<script src="/PublishingJavascript/jquery-1.11.2.min.js"></script>
+<script src="/PublishingJavascript/Tax/tax.js"></script>
+<link rel="stylesheet" type="text/css" href="/Style Library/Tax/Thai/tax.css">
+<div style="width:990px;position:relative;height:220px;">
+	<div id="divChild1" class="divPanelChild" style="height:220px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/childs_education_plan.png);">
+		<div class="divSubChild" style="position:absolute;top:42px;left:40px">
+			<div style="position:absolute;"><input id="txt_Ch1_A" type="text" class="cssInput" value="200,000" maxlength="10"></div>
+			<div style="position:absolute;left:245px;"><input id="txt_Ch1_B" type="text" class="cssInput" value="5" maxlength="2"></div>
+			<div style="position:absolute;left:488px;"><input id="txt_Ch1_D" type="text" class="cssInput" value="0" maxlength="10"></div>
+            <div style="position:absolute;left:725px;"><input id="txt_Ch1_C" class="cssInput" type="text" value="5.0" maxlength="4"/></div>
+		</div>
+		<div style="position:absolute;top:130px;left:330px;">
+			<div style="position:absolute;left:160px;"><input id="txt_Ch1_G" class="cssOutput" type="text" value="0" disabled="disabled"></div>
+			<div style="position:absolute;left:0px;top:50px;"><input id="txt_Ch1_F" type="text" class="cssOutput" value="0*" disabled="disabled" style="width:220px;"></div>
+			<div style="position:absolute;left:300px;top:50px"><input id="txt_Ch1_B1" type="text"class="cssOutput" value="0" disabled="disabled"></div>
+		</div>
+		<div id='divChildError1' style="display:none;top:100px; width:990px; height:154px; background-image:url(/PublishingImages/Tax/Thai/bg_title/child_error1.png);position:absolute;"></div>
+	</div>
+	
+	<div id="divChild2" class="divPanelChild" style="height:220px;width:990px; background-image:url(/PublishingImages/Tax/Thai/bg_title/childs_education_plan.png);">
+		<div class="divSubChild" style="top:42px;left:40px">
+			<div style="position:absolute;"><input id="txt_Ch2_A" type="text" class="cssInput" value="0" maxlength="10"></div>
+			<div style="position:absolute;left:245px;"><input id="txt_Ch2_B" type="text" class="cssInput" value="0" maxlength="2"></div>
+			<div style="position:absolute;left:488px;"><input id="txt_Ch2_D" type="text" class="cssInput" value="0" maxlength="10"></div>
+            <div style="position:absolute;left:725px;"><input id="txt_Ch2_C" class="cssInput" type="text" value="5.0" maxlength="4"/></div>
+		</div>
+		<div class="divSubChild" style="top:130px;left:330px;">
+			<div style="position:absolute;left:160px;"><input id="txt_Ch2_G" class="cssOutput" type="text" value="0" disabled="disabled"></div>
+			<div style="position:absolute;left:0px;top:50px;"><input id="txt_Ch2_F" type="text" class="cssOutput" value="0*" disabled="disabled" style="width:220px;"></div>
+			<div style="position:absolute;left:300px;top:50px"><input id="txt_Ch2_B1" type="text"class="cssOutput" value="0" disabled="disabled"></div>
+		</div>	
+		<div id='divChildError2' style="display:none;top:100px; width:990px; height:154px; background-image:url(/PublishingImages/Tax/Thai/bg_title/child_error1.png);position:absolute;"></div>		
+	</div>
+	
+	<div id="divChild3" class="divPanelChild" style="height:220px;width:990px; background-image:url(/PublishingImages/Tax/Thai/bg_title/childs_education_plan.png);">
+		<div class="divSubChild" style="top:42px;left:40px">
+			<div style="position:absolute;"><input id="txt_Ch3_A" type="text" class="cssInput" value="0" maxlength="10"></div>
+			<div style="position:absolute;left:245px;"><input id="txt_Ch3_B" type="text" class="cssInput" value="0" maxlength="2"></div>
+			<div style="position:absolute;left:488px;"><input id="txt_Ch3_D" type="text" class="cssInput" value="0" maxlength="10"></div>
+            <div style="position:absolute;left:725px;"><input id="txt_Ch3_C" class="cssInput" type="text" value="5.0" maxlength="4"/></div>    
+		</div>
+		<div class="divSubChild"  style="top:130px;left:330px;">
+			<div style="position:absolute;left:160px;"><input id="txt_Ch3_G" class="cssOutput" type="text" value="0" disabled="disabled"></div>
+			<div style="position:absolute;left:0px;top:50px;"><input id="txt_Ch3_F" type="text" class="cssOutput" value="0*" disabled="disabled" style="width:220px;"></div>
+			<div style="position:absolute;left:300px;top:50px"><input id="txt_Ch3_B1" type="text"class="cssOutput" value="0" disabled="disabled"></div>
+		</div>	
+		<div id='divChildError3' style="display:none;top:100px; width:990px; height:154px; background-image:url(/PublishingImages/Tax/Thai/bg_title/child_error1.png);position:absolute;"></div>		
+	</div>
+	
+	<div id="divAllSum" class="divPanelChild" style="position:relative;height:220px;width:990px;">
+		<div id="divSum1" style="height:56px;width:990px; background-image:url(/PublishingImages/Tax/Thai/bg_title/bg_child_sum_1.png);background-repeat:no-repeat; position:relative; display:none;">
+			<div style="position:absolute;top:4px;left:35px">
+				<div style="position:absolute;"><input id="txt_From_Year" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+				<div style="position:absolute;left:110px;"><input id="txt_To_Year" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+				<div id="divTxt_Total" style="position:absolute;left:628px;"><input id="txt_Total" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+			</div>
+		</div>
+		<div id="divSum2" style="height:56px;width:990px; background-image:url(/PublishingImages/Tax/Thai/bg_title/bg_child_sum_1.png);background-repeat:no-repeat; position:relative; display:none;">
+			<div style="position:absolute;top:4px;left:35px">
+				<div style="position:absolute;"><input id="txt_From_Year" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+				<div style="position:absolute;left:110px;"><input id="txt_To_Year" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+				<div id="divTxt_Total" style="position:absolute;left:628px;"><input id="txt_Total" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+			</div>
+		</div>
+		<div id="divSum3" style="height:56px;width:990px; background-image:url(/PublishingImages/Tax/Thai/bg_title/bg_child_sum_1.png);background-repeat:no-repeat; position:relative; display:none;">
+			<div style="position:absolute;top:4px;left:35px">
+				<div style="position:absolute;"><input id="txt_From_Year" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+				<div style="position:absolute;left:110px;"><input id="txt_To_Year" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+				<div id="divTxt_Total" style="position:absolute;left:628px;"><input id="txt_Total" type="text" class="cssOutput" value="0" disabled="disabled"></div>
+			</div>
+		</div>
+	</div>
+	<div id="divChildRate" style="position:absolute;top:237px;left:10px;color:#AAAAAA;">*จำนวนเงินในอนาคต หลังคำนวณการเพิ่มขึ้นของค่าเทอมปีละ <input type="text" maxlength="2" id="txt_show_rate" class="cssOutput" value="4.5%" style="text-align:center;color:#AAAAAA;font-size:12px;width:50px;" disabled="disabled">แล้ว</div>			
+</div>

@@ -1,0 +1,32 @@
+<script src="/PublishingJavascript/jquery-1.11.2.min.js"></script>
+<script src="/PublishingJavascript/Tax/tax.js"></script>
+<link rel="stylesheet" type="text/css" href="/Style Library/Tax/Eng/tax.css">
+
+<div id="divRetirement" style="height:280px;width:990px;background-image:url(/PublishingImages/Tax/Eng/bg_title/retirement_plan_edit.png);position:relative;">
+	<div style="position:absolute;top:6px;left:225px;">
+		<div style="position:absolute;"><input id="txt_RT_A" type="text" class="cssInput" value="30"  style="width:170px;" maxlength="2"></div>
+		<div style="position:absolute;top:45px;"><input id="txt_RT_B" type="text" class="cssInput"  style="width:170px;" value="60" maxlength="2"></div>
+		<div style="position:absolute;top:90px;"><input id="txt_RT_C" type="text" class="cssInput" style="width:170px;" value="80" maxlength="3"></div>	
+	</div>
+	<div style="position:absolute;top:6px;left:718px;">
+		<div style="position:absolute;"><input id="txt_RT_D" type="text" class="cssInput"style="width:170px;" value="20,000" maxlength="7"></div>
+		<div style="position:absolute;top:45px;"><input id="txt_RT_F" type="text" class="cssInput" style="width:170px;" value="0" maxlength="10"></div>
+		<div style="position:absolute;top:90px;"><input id="txt_RT_E" class="cssInput" type="text" value="3.0" maxlength="4"  style="width:170px;text-align:center;"/></div>	
+	</div>
+	<div style="position:absolute;top:146px;">
+		<div style="position:absolute;left:280px;"><input id="txt_RT_G" class="cssOutput" type="text" style="width:180px;text-align:center;font-size:36px;" disabled="disabled" value="0"></div>
+		<div style="position:absolute;left:690px;"><input id="txt_RT_CB" class="cssOutput" type="text" style="width:50px;text-align:center;font-size:36px;" disabled="disabled" value="0"></div>		
+	</div>
+	<div style="position:absolute;top:202px;">
+		<div style="position:absolute;left:120px;"><input id="txt_RT_H" type="text" class="cssOutput" style="width:260px;text-align:center;font-size:36px;" disabled="disabled" value="0"></div>
+		<div style="position:absolute;left:675px;"><input id="txt_RT_I" type="text"class="cssOutput"  style="width:180px;text-align:center;font-size:36px;" disabled="disabled" value="0"></div>
+	</div>	
+	<div style="position:absolute;top:260px; left:130px;"><input type="text" id="txt_show_rate" class="cssOutput" value="7.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled"></div>
+	<div style="position:absolute;top:260px; left:618px;"><input type="text" id="txt_show_rate_retirement" class="cssOutput" value="8.5%" style="text-align:center;color:#999999;font-size:14px;" disabled="disabled"></div>
+	
+	<div id="divError" style="top:130px;height:192px;width:990px;background-image:url(/PublishingImages/Tax/Eng/bg_title/retirement_cong.png);position:absolute;display:none;">
+	</div>
+	<div id="divInfinity" style="top:130px;height:118px;width:990px;background-image:url(/PublishingImages/Tax/Eng/bg_title/retire_infinity_value.png);position:absolute;display:none;">
+		<div style="position:absolute;left:510px;top:40px;"><input id="txt_RT_error" type="text"class="cssOutput"  style="width:180px;text-align:center;" disabled="disabled"></div>
+	</div>	
+</div>

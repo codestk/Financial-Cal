@@ -1,0 +1,500 @@
+﻿<!--<!DOCTYPE html>-->
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <!--<link href="../Content/bootstrap.css" rel="stylesheet" />-->
+    <link href="Css/bootstrap.css" rel="stylesheet" />
+    <!--<script src="../Scripts/jquery-1.10.2.js"></script>-->
+    <!--<script src="../PublishingJavascript/jquery-1.6.2.min.js"></script>-->
+
+    <script src="../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../PublishingJavascript/Landing_Functions.js"></script>
+
+    <link href="../Style Library/Landing_Pages.css" rel="stylesheet" />
+
+    <link href="../Style Library/Tax/Eng/tax.css" rel="stylesheet" />
+
+    <!--P Noom-->
+    <script src="../PublishingJavascript/Tax/tax.js"></script>
+    <script src="../PublishingJavascript/Tax/fn_healthy.js"></script>
+    <script type="text/javascript" src="/PublishingJavascript/Tax/fn_healthy.js"></script>
+    <script src="../PublishingJavascript/Tax/fn_healthy.js"></script>
+    <link href="../Style Library/Tax/Eng/tax.css" rel="stylesheet" />
+
+    <link href="Css/StyleSheet.css" rel="stylesheet" />
+    <link href="Css/iCons.css" rel="stylesheet" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .list-type3 {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+            .list-type3 li, .list-type3 a {
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                position: relative;
+                font-size: 15px;
+                margin-bottom: 12px;
+                font-family: 'Raleway', sans-serif;
+                transition: background-color 1.5s ease;
+            }
+
+            .list-type3 a {
+                padding: 0 60px 0 12px;
+                background: #0089e0;
+                color: #fff;
+                text-decoration: none;
+                -moz-border-radius-bottomright: 4px;
+                -webkit-border-bottom-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                -moz-border-radius-topright: 4px;
+                -webkit-border-top-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+
+                .list-type3 a:before {
+                    content: "";
+                    float: left;
+                    position: absolute;
+                    top: 0;
+                    left: -12px;
+                    width: 0;
+                    height: 0;
+                    border-color: transparent #0089e0 transparent transparent;
+                    border-style: solid;
+                    border-width: 18px 12px 18px 0;
+                }
+
+                .list-type3 a:after {
+                    content: "";
+                    position: absolute;
+                    top: 15px;
+                    left: 0;
+                    float: left;
+                    width: 6px;
+                    height: 6px;
+                    -moz-border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    border-radius: 2px;
+                    background: #fff;
+                    -moz-box-shadow: -1px -1px 2px #004977;
+                    -webkit-box-shadow: -1px -1px 2px #004977;
+                    box-shadow: -1px -1px 2px #004977;
+                }
+
+                .list-type3 a:hover {
+                    background: #555;
+                }
+
+                    .list-type3 a:hover:before {
+                        border-color: transparent #0089e0 transparent transparent;
+                    }
+    </style>
+</head>
+<body>
+
+    <section class="FinanCalBaseText">
+        <div class="container" style="background-color:#666">
+
+            <!--<div style="background-color:blanchedalmond;  height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_2.png);position:relative;display:block;background-size:contain;">
+                <div style="position:absolute;top:42px;left:40px">
+                    <div style="position:absolute;left:497px;top:44px;"></div>
+                    <div style="position:absolute;left:497px;top:123px;"></div>
+                </div>
+                <div style="position: absolute; width: 121px; height: 41px; left: 844px; top: 19px;cursor:pointer;" onClick="changeSubMenu(2);">2. ข้อมูลทางการเงิน</div>
+            </div>-->
+            <!--<div id="divHealthy_Input_255" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_2.png);position:relative;display:block;background-size:contain;">
+                <div style="position:absolute;top:39px;left:-20px;">
+                    <div style="position: absolute; left: 235px; top: 31px;"><input type="text" id="txt_hl_income" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 80px;"><input type="text" id="txt_hl_expenses" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 127px;"><input type="text" id="txt_hl_mortgage" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 176px;"><input type="text" id="txt_hl_car" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 223px;"><input type="text" id="txt_hl_saving" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                </div>
+                <div style="position:absolute;top:39px;left:480px;">
+                    <div style="position: absolute; left: 235px; top: 32px;"><input type="text" id="txt_hl_start" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 80px;"><input type="text" id="txt_hl_asset" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 128px;"><input type="text" id="txt_hl_quick_assets" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    <div style="position: absolute; left: 235px; top: 179px;"><input type="text" id="txt_hl_debit" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                </div>
+
+                <div style="position: absolute; width: 145px; height: 41px; left: 28px; top: 19px;cursor:pointer;" onClick="changeSubMenu(1);"></div>
+                <div style="position: absolute; width: 121px; height: 41px; left: 844px; top: 19px;cursor:pointer;" onClick="changeSubMenu(3);"></div>
+            </div>-->
+
+            <div id="divHealthy_Output_1333" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:block;background-size:contain;">
+                <div id='healthy_bg_3_1_graph_15555' class="classGraph" style="position: absolute;top: 81px;left: 28px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
+                <div id='healthy_bg_3_1_graph_25555' class="classGraph" style="position: absolute;top: 81px;left: 28px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>
+                <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                <map name="Map14444">
+                    <area shape="rect" coords="608,91,954,141" href="#" onClick="changeGraph(2);">
+                    <area shape="rect" coords="609,147,955,195" href="#" onClick="changeGraph(3);">
+                    <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                    <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                    <area shape="rect" coords="608,311,956,360" href="#" onClick="changeGraph(6);">
+                </map>
+                <div id="divResultContent444" style="width:440px;height:140px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                <input type="text" id="txt_Result_Value444444" class="cssOutput" style="width: 200px;text-align: right;font-size: auto;position: absolute;top: 273px;left: 349px;" value="10,000" disabled="disabled">
+                <div id="divEmo444" style="width:70px;height:70px;position:absolute;top:55px;left:500px;"></div>
+                <div id="divLine444" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                <div style="position: absolute; left: 240px; top: 110px;"><input type="text" id="txt_hl_Result_16666" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+                <div style="position: absolute; left: 428px; top: 300px;display: none;"><input type="text" id="txt_hl_Result_1166666" class="cssOutput" style="width:150px;font-size:20px;text-align:center;" value="0" maxlength="14"></div>
+                <div id='healthy_bg_3_1_15555' class="classSon" style="position: absolute;top: 340px;left: 170px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_1.png" /></div>
+                <div id='healthy_bg_3_1_25555' class="classSon" style="position: absolute;top: 340px;left: 170px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_2.png" /></div>
+            </div>
+
+            <div id="divHealthy_Input_1" class="row" style="display:none">
+
+                <div class="row">
+                    <div class="col-md-12" onClick="changeSubMenu(2);">
+                        <div class="text-right FinanCalLinkText">
+                            2.
+
+                            ข้อมูลทางการเงิน           <img src="Image/icon/right-arrow.svg" class="iconNext" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 img-responsive">
+
+                    <img src="Image/BigIconOne.png" class="center-block " />
+                </div>
+                <div class="col-md-6" style="background-color:#b6ff00">
+
+                    <div class=" text-center " style="">
+                        <div class="">
+
+                            <label id="lblAgr" class="FinanCalLabel"> อายุปัจจุบัน</label>
+                            <div class="squarebrackets">
+                                <input type="text" id="txt_hl_Age_Now" class="cssInput  " style="width:170px;font-size:24px;text-align:center;" value="20" maxlength="3">
+                            </div>
+                        </div>
+
+                        <div class="">
+
+                            <label id="lblStartWork" class="FinanCalLabel">อายุตอนเริ่มทำงาน</label>
+                            <div class="squarebrackets">
+                                <input type="text" id="txt_hl_Age_Start" class="cssInput" style="width:170px;font-size:24px;text-align:center;" value="20" maxlength="3">
+                            </div>
+                        </div>
+
+                        <div class=" ">
+                            <div class="col-md-4 col-md-offset-4 col-sm-4  col-sm-offset-4 col-xs-4  col-xs-offset-4 borderDashed" style="margin-top:20px;">
+                                <label class="FinanCalLabel">การมีบุตร</label>
+
+                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                    <label class="btn active">
+                                        <input type='radio' id='rad_Child' name='rad_Child' value='1'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span>  มี</span>
+                                    </label>
+                                    <label class="btn active">
+                                        <input type='radio' id='rad_Child' name='rad_Child' value='2' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> ไม่มี</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="divHealthy_Input_2" class="row" style="display:none">
+
+                <div class="col-md-6 text-left FinanCalLinkText" onClick="changeSubMenu(1);">
+                    <img src="Image/icon/left-arrow.svg" class="iconNext " /> 1. ข้อมูลส่วนบุคคล
+                </div>
+                <div class="col-md-6 text-right FinanCalLinkText" onClick="changeSubMenu(3);">
+                    3.
+
+                    สรุป           <img src="Image/icon/right-arrow.svg" class="iconNext" />
+                </div>
+
+                <div class="col-md-6" style="background-color:dodgerblue">
+
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">รายได้ต่อเดือน</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_income" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-right  "><label class="FinanCalLabel">รายจ่ายต่อเดือน</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_expenses" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-right  "><label class="FinanCalLabel">ยอดผ่อนชำระหนี้บ้านต่อเดือน</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_mortgage" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">ยอดผ่อนชำระหนี้รถต่อเดือน</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_car" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">เงินออมต่อเดือน</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_saving" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div><label class="FinanCalLabel" style="display:inline-block"> </label>
+                    </div>
+                </div>
+                <div class="col-md-6" style="background-color:slategrey">
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">รายได้ต่อเดือนตอนเริ่มต้นทำงาน</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_start" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">สินทรัพย์รวม</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_asset" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">สินทรัพย์สภาพคล่อง</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_quick_assets" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 text-right "><label class="FinanCalLabel">หนี้สินรวม</label></div>
+                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_debit" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="background-color:#ff0000; ">
+                    <div class="col-md-12"><label>1. คุณมีสภาพคล่องเพียงพอหรือไม่</label></div>
+                    <!--<img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />-->
+                    <div class="col-md-3" style="position:relative;">
+                        <div      style="width:200px;background-color:firebrick;margin-left:auto;margin-right:auto;">
+                            <div id='healthy_bg_3_1_graph_1' class="classGraph" style="position: relative;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
+                            <div id='healthy_bg_3_1_graph_2' class="classGraph" style="position: absolute;top: 0px; "><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>
+                            <div id="divLine" style="width:90px;height:40px;position:absolute;top:209px; background-image:url(/PublishingImages/Tax/line.png)"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9" style="background-color:cyan">
+
+                        <div style="background-color:#fff;" class="col-md-12 borderDashed text-center">
+                            <div class="col-md-12 text-left">
+                                <label> ผลลัพธ์คือ</label>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="text" id="txt_hl_Result_1" class="cssOutput" style="width:220px;font-size:auto;text-align:center; vertical-align:middle;height:30%" value="0" maxlength="3" disabled="disabled">
+                            </div>
+
+                            <div class="col-md-12 text-right">
+                                <label> เท่าของร่ายจ่ายต่อเดือน*</label>
+                            </div>
+                        </div>
+
+                        <div class="text-right">  <input type="text" id="txt_Result_Value" class="cssOutput" style="font-size:auto; " value="10,000" disabled="disabled"> </div>
+
+                        <div class="col-md-12"><label class="">เกณมาตรฐาน</label></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="list-type3">
+                        <ol>
+                            <li><a href="#">Formget Online Form Builder Create Online Forms</a></li>
+                            <li><a href="#">Formget Online Form Builder Create Online Forms</a></li>
+                            <li><a href="#">Formget Online Form Builder Create Online Forms</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div id="divHealthy_Output_1" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3ะะะ.png);position:relative;display:block;background-size:contain;">
+
+                    <!--<map name="Map1">
+                        <area shape="rect" coords="608,91,954,141" href="#" onClick="changeGraph(2);">
+                        <area shape="rect" coords="609,147,955,195" href="#" onClick="changeGraph(3);">
+                        <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                        <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                        <area shape="rect" coords="608,311,956,360" href="#" onClick="changeGraph(6);">
+                    </map>-->
+
+                    <div id="divResultContent" style="width:440px;height:140px;position:absolute;top:190px;left:165px;background-size: contain; background-color:rebeccapurple;"></div>
+                    <input type="text" id="txt_Result_Value" class="cssOutput" style="width: 200px;text-align: right;font-size: auto;position: absolute;top: 273px;left: 349px;" value="10,000" disabled="disabled">
+                    <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;"></div>
+
+                    <div style="position: absolute; left: 428px; top: 300px;display: none;"><input type="text" id="txt_hl_Result_11" class="cssOutput" style="width:150px;font-size:20px;text-align:center;" value="0" maxlength="14"></div>
+                    <div id='healthy_bg_3_1_1' class="classSon" style="position: absolute;top: 340px;left: 170px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_1.png" /></div>
+                    <div id='healthy_bg_3_1_2' class="classSon" style="position: absolute;top: 340px;left: 170px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_2.png" /></div>
+                </div>
+
+                <div id="divHealthy_Output_2" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                    <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_2.png" usemap="#Map2" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                    <map name="Map2">
+                        <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                        <area shape="rect" coords="609,147,955,195" href="#" onClick="changeGraph(3);">
+                        <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                        <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                        <area shape="rect" coords="608,311,956,360" href="#" onClick="changeGraph(6);">
+                    </map>
+                    <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                    <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                    <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                    <div style="position: absolute; left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_2" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+                </div>
+                <div id="divHealthy_Output_3" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                    <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_3.png" usemap="#Map3" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                    <map name="Map3">
+                        <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                        <area shape="rect" coords="611,91,957,142" href="#" onClick="changeGraph(2);">
+                        <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                        <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                        <area shape="rect" coords="608,311,958,361" href="#" onClick="changeGraph(6);">
+                    </map>
+
+                    <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                    <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                    <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                    <div style="position: absolute;  left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_3" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3"></div>
+                </div>
+                <div id="divHealthy_Output_4" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                    <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_4.png" usemap="#Map4" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                    <map name="Map4">
+                        <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                        <area shape="rect" coords="610,91,958,142" href="#" onClick="changeGraph(2);">
+                        <area shape="rect" coords="610,146,958,197" href="#" onClick="changeGraph(3);">
+                        <area shape="rect" coords="608,255,958,307" href="#" onClick="changeGraph(5);">
+                        <area shape="rect" coords="608,310,958,361" href="#" onClick="changeGraph(6);">
+                    </map>
+                    <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                    <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                    <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                    <div style="position: absolute; left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_4" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+                </div>
+                <div id="divHealthy_Output_5" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                    <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_5.png" usemap="#Map5" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                    <map name="Map5">
+                        <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                        <area shape="rect" coords="610,91,957,142" href="#" onClick="changeGraph(2);">
+                        <area shape="rect" coords="608,310,958,361" href="#" onClick="changeGraph(6);">
+                        <area shape="rect" coords="608,200,958,252" href="#" onClick="changeGraph(4);">
+                        <area shape="rect" coords="609,146,957,197" href="#" onClick="changeGraph(3);">
+                    </map>
+                    <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                    <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                    <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                    <div style="position: absolute; left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_5" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+                </div>
+                <div id="divHealthy_Output_6" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                    <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_6.png" usemap="#Map6" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                    <map name="Map6">
+                        <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                        <area shape="rect" coords="609,91,957,142" href="#" onClick="changeGraph(2);">
+                        <area shape="rect" coords="609,146,957,196" href="#" onClick="changeGraph(3);">
+                        <area shape="rect" coords="609,201,959,252" href="#" onClick="changeGraph(4);">
+                        <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                    </map>
+                    <div style="position: absolute; left: 120px; top: 128px;"><input type="text" id="txt_hl_Result_6" class="cssOutput" style="width:380px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+                </div>
+
+                <div id="divShowOutputBack" class="col-md-6 text-left FinanCalLinkText" style="cursor: pointer;" onClick="changeSubMenu(2);">  <img src="Image/icon/left-arrow.svg" class="iconNext" /> ข้อมูลการเงิน</div>
+                <div id="divShowOutput" class="col-md-6 text-right FinanCalLinkText" style="cursor: pointer;" onClick="changeSubMenu(0);"> คำนวณใหม่  <img src="Image/icon/right-arrow.svg" class="iconNext" /></div>
+
+                <!--<div class="col-md-6 text-left FinanCalLinkText" onClick="changeSubMenu(1);">
+                    <img src="Image/icon/left-arrow.svg" class="iconNext " /> 1. ข้อมูลส่วนบุคคล
+                </div>
+                <div class="col-md-6 text-right FinanCalLinkText" onClick="changeSubMenu(3);">
+                    3.
+
+                    สรุป           <img src="Image/icon/right-arrow.svg" class="iconNext" />
+                </div>-->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<!--<div>
+             <div id="divHealthy_Output_1" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                 <div id='healthy_bg_3_1_graph_1' class="classGraph" style="position: absolute;top: 81px;left: 28px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
+                 <div id='healthy_bg_3_1_graph_2' class="classGraph" style="position: absolute;top: 81px;left: 28px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>
+                 <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                 <map name="Map1">
+                     <area shape="rect" coords="608,91,954,141" href="#" onClick="changeGraph(2);">
+                     <area shape="rect" coords="609,147,955,195" href="#" onClick="changeGraph(3);">
+                     <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                     <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                     <area shape="rect" coords="608,311,956,360" href="#" onClick="changeGraph(6);">
+                 </map>
+                 <div id="divResultContent" style="width:440px;height:140px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                 <input type="text" id="txt_Result_Value" class="cssOutput" style="width: 200px;text-align: right;font-size: auto;position: absolute;top: 273px;left: 349px;" value="10,000" disabled="disabled">
+                 <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;"></div>
+                 <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                 <div style="position: absolute; left: 240px; top: 110px;"><input type="text" id="txt_hl_Result_1" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+                 <div style="position: absolute; left: 428px; top: 300px;display: none;"><input type="text" id="txt_hl_Result_11" class="cssOutput" style="width:150px;font-size:20px;text-align:center;" value="0" maxlength="14"></div>
+                 <div id='healthy_bg_3_1_1' class="classSon" style="position: absolute;top: 340px;left: 170px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_1.png" /></div>
+                 <div id='healthy_bg_3_1_2' class="classSon" style="position: absolute;top: 340px;left: 170px;"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_2.png" /></div>
+             </div>
+             <div id="divHealthy_Output_2" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                 <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_2.png" usemap="#Map2" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                 <map name="Map2">
+                     <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                     <area shape="rect" coords="609,147,955,195" href="#" onClick="changeGraph(3);">
+                     <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                     <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                     <area shape="rect" coords="608,311,956,360" href="#" onClick="changeGraph(6);">
+                 </map>
+                 <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                 <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                 <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                 <div style="position: absolute; left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_2" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+             </div>
+             <div id="divHealthy_Output_3" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                 <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_3.png" usemap="#Map3" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                 <map name="Map3">
+                     <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                     <area shape="rect" coords="611,91,957,142" href="#" onClick="changeGraph(2);">
+                     <area shape="rect" coords="609,202,957,251" href="#" onClick="changeGraph(4);">
+                     <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                     <area shape="rect" coords="608,311,958,361" href="#" onClick="changeGraph(6);">
+                 </map>
+
+                 <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                 <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                 <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                 <div style="position: absolute;  left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_3" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3"></div>
+             </div>
+             <div id="divHealthy_Output_4" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                 <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_4.png" usemap="#Map4" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                 <map name="Map4">
+                     <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                     <area shape="rect" coords="610,91,958,142" href="#" onClick="changeGraph(2);">
+                     <area shape="rect" coords="610,146,958,197" href="#" onClick="changeGraph(3);">
+                     <area shape="rect" coords="608,255,958,307" href="#" onClick="changeGraph(5);">
+                     <area shape="rect" coords="608,310,958,361" href="#" onClick="changeGraph(6);">
+                 </map>
+                 <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                 <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                 <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                 <div style="position: absolute; left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_4" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+             </div>
+             <div id="divHealthy_Output_5" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                 <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_5.png" usemap="#Map5" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                 <map name="Map5">
+                     <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                     <area shape="rect" coords="610,91,957,142" href="#" onClick="changeGraph(2);">
+                     <area shape="rect" coords="608,310,958,361" href="#" onClick="changeGraph(6);">
+                     <area shape="rect" coords="608,200,958,252" href="#" onClick="changeGraph(4);">
+                     <area shape="rect" coords="609,146,957,197" href="#" onClick="changeGraph(3);">
+                 </map>
+                 <div id="divResultContent" style="width:440px;height:100px;position:absolute;top:190px;left:165px;background-size: contain;"></div>
+                 <div id="divEmo" style="width:70px;height:70px;position:absolute;top:55px;left:500px;display:none;"></div>
+                 <div id="divLine" style="width:90px;height:40px;position:absolute;top:290px;left:27px;background-image:url(/PublishingImages/Tax/line.png)"></div>
+                 <div style="position: absolute; left: 260px; top: 110px;"><input type="text" id="txt_hl_Result_5" class="cssOutput" style="width:220px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+             </div>
+             <div id="divHealthy_Output_6" style="height:400px;width:990px;background-image:url(/PublishingImages/Tax/Thai/bg_title/healthy_bg_3.png);position:relative;display:none;background-size:contain;">
+                 <img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_6.png" usemap="#Map6" style="background-size:contain;position: relative;height:400px;width:990px;" />
+                 <map name="Map6">
+                     <area shape="rect" coords="611,37,957,87" href="#" onClick="changeGraph(1);">
+                     <area shape="rect" coords="609,91,957,142" href="#" onClick="changeGraph(2);">
+                     <area shape="rect" coords="609,146,957,196" href="#" onClick="changeGraph(3);">
+                     <area shape="rect" coords="609,201,959,252" href="#" onClick="changeGraph(4);">
+                     <area shape="rect" coords="608,256,958,306" href="#" onClick="changeGraph(5);">
+                 </map>
+                 <div style="position: absolute; left: 120px; top: 128px;"><input type="text" id="txt_hl_Result_6" class="cssOutput" style="width:380px;font-size:auto;text-align:center;" value="0" maxlength="3" disabled="disabled"></div>
+             </div>
+
+             <div id="divShowOutputBack" style="position: absolute; width: 121px; height: 35px; left: 617px; top: 651px; z-index: 99; cursor: pointer;" onClick="changeSubMenu(2);"></div>
+             <div id="divShowOutput" style="position: absolute; width: 121px; height: 35px; left: 856px; top: 651px; z-index: 99; cursor: pointer;" onClick="changeSubMenu(0);"></div>
+         </div>-->

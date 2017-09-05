@@ -1,0 +1,30 @@
+﻿.iconNext{
+
+height:30px;width:auto;
+}
+ 
+/*[  ]*/
+.squarebrackets:before {
+   content: " ";
+    
+        border-left:2px solid #003399;
+   border-top:2px solid #003399;
+   border-bottom:2px solid #003399;
+   /*border-left:2px solid #7AA3CC;
+   border-top:2px solid #7AA3CC;
+   border-bottom:2px solid #7AA3CC;*/
+   margin-right:10px;
+  padding:10px 5px 10px 5px;
+}
+.squarebrackets:after
+{
+  content:" ";
+  padding:10px 5px 10px 5px;
+  /*border-right:2px solid #7AA3CC;
+  border-top:2px solid #7AA3CC;
+  border-bottom:2px solid #7AA3CC;*/
+   border-right:2px solid #003399;
+  border-top:2px solid #003399;
+  border-bottom:2px solid #003399; 
+  margin-left:10px;
+}

@@ -1,0 +1,504 @@
+﻿#divMain{
+	width:800px;
+	position:relative;
+	height:300px;
+}
+
+#div_Input_Income div{
+/*	border:thin solid black;*/
+	font-size:16px;
+}
+
+.divPanel1, .divPanel2, .divPanel3, .divPanelChild{
+	padding:10px;
+}
+
+.subMenu1{
+	width:95px;
+	height:60px;
+	padding-right:70px;
+	margin:0;
+	left:-30px;
+}
+
+.divPanel1{
+	display:block;
+	position:absolute;
+	top:0px;
+/*	Production */
+/*	visibility:hidden; */
+	height:350px;
+	width:990px;
+	background-repeat:no-repeat;
+}
+
+.divPanelChild{
+	display:block;
+	top:0px;
+/* 	Production	*/ 	
+	visibility:hidden;	
+	position:absolute;	
+	height:350px;
+	width:990px;
+	background-repeat:no-repeat;
+}
+
+.divSubChild{
+	position:absolute;
+/*	position:relative;	*/
+} 
+
+.divPanel2{
+ background-color:#8F8F8F;
+}
+
+.divPanel3{
+ background-color:#FFFFFF;
+}
+
+#div_Input_Income input {
+	width:150px;
+	margin-left:15px;
+	margin-right:15px;
+	text-align:right;
+}
+
+selStatus{
+	width:120px;
+}
+
+.inputData{
+	border:none;
+	border-bottom:thin solid #CCCCCC;
+	background:none;
+}
+
+.inputResult{
+	color:#FF6600;
+	background:#FFFFFF;
+	border:none;
+	width:120px;
+}
+ 
+.outputResult{
+	background:none;
+	border:none;
+	color:#FFFFFF;
+}
+
+.inputShowOnly{
+	background:none;
+	border:none;
+	color:#FF6600;
+	display:inline;
+	width:120px;
+	height:30px;
+	padding:5px;
+} 
+
+.selection_box {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+	width:auto;
+
+}
+
+.selection_box .selection_top {
+    position: relative;
+    display: block;
+    background: url("/PublishingImages/Tax/Thai/top_btn.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    border: 0px #333 solid;
+}
+
+.selection_box .selection_buttom {
+    position: relative;
+    display: block;
+    background: url("/PublishingImages/Tax/Thai/bottom_btn.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    border: 0px #333 solid;
+}
+
+.divTitle2{
+	width:300px;
+	display:inline-block;
+	height:25px;
+}
+
+.divColumnPanel{
+	display:block;
+	width:800px;
+}
+
+.divLabel_1{
+	float:left;
+	width:220px;
+}
+
+.divLabel_2{
+	float:left;
+	width:220px;
+}
+
+.divHeader_1{
+	text-decoration:underline;
+	padding-bottom:10px;
+	font-weight:bolder;
+}
+
+#ulMenu{
+	padding:0px;
+	margin:0px;
+}
+
+#ulMenu li{
+	list-style:none;
+	display:inline;
+	padding:0px;
+	cursor:hand;
+}
+
+
+#ulMenuChild{
+	padding:0px;
+	margin:0px;
+}
+
+#ulMenuChild li{
+	list-style:none;
+	display:inline;
+	padding:0px;
+	cursor:hand;
+}
+
+.cssInput{
+	color:#FF6600;
+	border:none;
+	border-bottom:dotted #666666 thin;
+	background:none;
+	font-size:24px;
+	text-align:right;
+	width:170px;
+}
+
+.cssInput1{
+	color:#999999;
+	border:none;
+	background:none;
+	font-size:24px;
+	text-align:center;
+}
+
+.cssInput2{
+	color:#FF6600;
+	border:none;
+	background:none;
+	font-size:32px;
+	text-align:center;
+}
+
+.cssInput3{
+	color:#2465a7 !important;
+	border:none;
+	background:none;
+	font-size:24px;
+	text-align:center;
+}
+
+.cssOutput{
+	color:#2465a7 !important;
+	border:none;
+	background:none;
+	font-size:40px;
+	width:180px;
+	text-align:center;
+}
+
+.css_divSubMenu{
+	display:none;
+}
+
+#divBanner{
+	position:absolute;
+	top:-60px;
+}
+
+#divTaxCursor{
+	position:absolute;
+	top:-24px;
+	height:100px;
+	width:40px;
+	left:215px;
+	z-index:100;	
+}
+
+#divTaxCursorEn{
+	position:absolute;
+	top:-24px;
+	height:100px;
+	width:40px;
+	left:123px;
+	z-index:100;	
+}
+
+#output_TAX{
+	position:absolute;
+	top:7px;
+	left:-7px;
+	color:#FF6600 !important;
+}
+
+#output_Total_Income{
+	position:absolute;
+	top:3px;
+	left:-13px;
+}
+
+#output_TAX_Max{
+	position:absolute;
+	font-size:40px !important;
+	top:27px;
+	left:48px;
+	width:280px !important;
+}
+#output_TAX_Save_Max{
+	position:absolute;
+	font-size:38px !important;
+	top:18px;
+	left:102px;	
+}
+
+#output_MaxLTF{
+	position:absolute;
+	top:-14px;
+	left:96px;
+}
+
+#output_MaxRMF{
+	position:absolute;
+	top:-13px;
+	left:96px;
+}
+
+#output_TAX_Save_Amount{
+	position:absolute;
+	top:-20px;
+	left:137px;
+	font-size:36px !important;
+}
+
+#output_TAX_Amount{
+	position:absolute;
+	font-size:40px !important;
+	left:102px;
+	width:246px !important;
+	top:-7px;
+}
+
+#output_TAX_3{
+	position:absolute;
+	left:124px;
+}
+
+#divTooltip1, #divTooltip2, #divTooltip3, #divTooltip4, #divTooltip5{
+	position:absolute;
+}
+
+#divTooltip1{
+	top:182px;
+	left:207px;
+}
+
+img{
+	border:none;
+}
+
+#divTooltip2{
+	top:29px;
+	left:692px;
+}
+
+#divTooltip3{
+	top:80px;
+	left:692px;
+}
+
+#divTooltip4{
+	top:129px;
+	left:692px;
+}
+
+#divTooltip5{
+	top:180px;
+	left:692px;
+}
+
+#divTaxError1{
+	position:absolute;
+	top:270px;
+	left:53px;
+}
+#divTaxError2{
+	position:absolute;
+	top:320px;
+	left:140px;
+}
+
+#output_TAX_4{
+	position:absolute;
+	left:127px;
+}
+
+#input_LTF{
+	position:absolute;
+	left:66px;
+	top:-22px;
+}
+
+#input_RMF{
+	position:absolute;
+	left:64px;
+	top:-22px;
+}
+#output_TAX_2{
+	position:absolute;
+	left:17px;
+	top:0px;
+	color:#ff6600 !important;
+}
+#output_Total_Reduce{
+	position:absolute;
+	left:17px;
+	top:0px;
+}
+
+/* -------------- Child ----------------------- */
+
+#divChild1 input,#divChild2 input,#divChild3 input{
+	text-align:center;
+}
+
+#divSum1 #txt_From_Year{
+	position:absolute;
+	left:-5px;
+	top:-4px;
+}
+
+#divSum1 #txt_To_Year{
+	position:absolute;
+	left:19px;
+	top:-4px;
+}
+
+#divSum1 #txt_Total{
+	position:absolute;
+	left:78px;
+	top:-4px;
+}
+
+#divSum2 #txt_From_Year{
+	position:absolute;
+	left:-5px;
+	top:-4px;
+}
+
+#divSum2 #txt_To_Year{
+	position:absolute;
+	left:19px;
+	top:-4px;
+}
+
+#divSum2 #txt_Total{
+	position:absolute;
+	left:78px;
+	top:-4px;
+}
+
+#divSum3 #txt_From_Year{
+	position:absolute;
+	left:-5px;
+	top:-4px;
+}
+
+#divSum3 #txt_To_Year{
+	position:absolute;
+	left:19px;
+	top:-4px;
+}
+
+#divSum3 #txt_Total{
+	position:absolute;
+	left:78px;
+	top:-4px;
+}
+/* --------------------- Saving ---------------------- */
+#divSavingHome #txt_show_rate{
+	color:#999999 !important;
+}
+/* --------------------- Retirement ------------------- */
+#divRetirement input{
+	text-align:center;
+}
+#txt_RT_G{
+	 position:absolute;
+	 left:-12px;
+	 top:0px;
+}
+
+#divRetirement #txt_show_rate{
+	color:#999999 !important;
+}
+
+#divRetirement #txt_show_rate_retirement{
+	color:#999999 !important;
+}
+
+/* ---------------------- Tax ------------------------- */
+#divHideSubmenu{
+	position:absolute;
+	top:-62px;
+	left:421px;
+}
+
+#div_Input_Allowances input{
+	text-align:center;
+}
+
+#div_Input_Income #divTaxError1{
+	top:268px !important;
+	left:100px !important;
+}
+/* ---------------------------- Child ------------------------------ */
+#divChildRate{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:lighter;
+	text-decoration:none;
+	color:#999999 !important;
+}
+
+#divChildRate input{
+	color:#999999 !important;
+}
+
+#divError{
+	height:123px !important;
+}
+
+#divError1{
+	width:700px !important;
+}
+
+/* --------------------- Homeloan -------------------- */
+#divHomeLoan input{
+	text-align:center;
+}
+#divHomeLoan #txt_show_rate{
+	color:#999999 !important;
+}
