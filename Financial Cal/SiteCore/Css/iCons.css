@@ -1,30 +1,46 @@
-﻿.iconNext{
-
-height:30px;width:auto;
+﻿.iconNext {
+    height: 30px;
+    width: auto;
 }
- 
+
 /*[  ]*/
 .squarebrackets:before {
-   content: " ";
-    
-        border-left:2px solid #003399;
-   border-top:2px solid #003399;
-   border-bottom:2px solid #003399;
-   /*border-left:2px solid #7AA3CC;
+    content: " ";
+    border-left: 2px solid #003399;
+    border-top: 2px solid #003399;
+    border-bottom: 2px solid #003399;
+    /*border-left:2px solid #7AA3CC;
    border-top:2px solid #7AA3CC;
    border-bottom:2px solid #7AA3CC;*/
-   margin-right:10px;
-  padding:10px 5px 10px 5px;
+    margin-right: 10px;
+    padding: 10px 5px 10px 5px;
 }
-.squarebrackets:after
-{
-  content:" ";
-  padding:10px 5px 10px 5px;
-  /*border-right:2px solid #7AA3CC;
+
+.squarebrackets:after {
+    content: " ";
+    padding: 10px 5px 10px 5px;
+    /*border-right:2px solid #7AA3CC;
   border-top:2px solid #7AA3CC;
   border-bottom:2px solid #7AA3CC;*/
-   border-right:2px solid #003399;
-  border-top:2px solid #003399;
-  border-bottom:2px solid #003399; 
-  margin-left:10px;
+    border-right: 2px solid #003399;
+    border-top: 2px solid #003399;
+    border-bottom: 2px solid #003399;
+    margin-left: 10px;
+}
+
+/*Emotion icon*/
+.iconCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+}
+
+.iconCorner {
+    position: absolute;
+       top: -64px;
+    right: -64px;
+    width: 70px;
+    height: 70px;
 }
