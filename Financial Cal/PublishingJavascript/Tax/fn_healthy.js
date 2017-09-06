@@ -139,7 +139,7 @@ function calHealthy() {
         minX = 6;
         maxX = 12;
     }
-
+    debugger
     var var_Result_Value = Math.abs(zz - yy);
     $Healthy('#txt_hl_Result_1').show();
     //$Healthy('#divHealthy_Output_1 #divEmo').css('left','500px');
@@ -153,11 +153,17 @@ function calHealthy() {
         //$Healthy('#divHealthy_Output_1 #divEmo').css('left','320px');
         //$Healthy('#divHealthy_Output_1 #divEmo').css('top','105px');
         //$Healthy('#divHealthy_Output_1 #divResultContent').css('background-image','url(/PublishingImages/Tax/Thai/bg_title/result1/content2_noval.png)');
-        //
-        $Healthy('#divHealthy_Output_1 #msg').text('คุณมีสินทรัพย์สภาพคล่องมากเกินไป ทำให้คุณเสียโอกาสที่จะได้รับผลตอบแทนจากเงินส่วนเกินดังกล่าว แนะนำให้นำสภาพคล่องส่วนเกินไปลงทุนเพื่อสร้างโอกาสในการรับผลตอบแทนที่สูงขึ้น');
+        //ไม่มีค่าใช้จ่าย
+        $Healthy('#divHealthy_Output_1 #divEmo').css('background-image', 'url(/PublishingImages/Tax/emo' + var_Selected_1 + '.png)');
+          $Healthy('#divEmo').addClass('iconCenter');
+            $Healthy('#divEmo').removeClass('iconCorner');
+        
+
+        // $Healthy('#divHealthy_Output_1 #msg').text('คุณมีสินทรัพย์สภาพคล่องมากเกินไป ทำให้คุณเสียโอกาสที่จะได้รับผลตอบแทนจากเงินส่วนเกินดังกล่าว แนะนำให้นำสภาพคล่องส่วนเกินไปลงทุนเพื่อสร้างโอกาสในการรับผลตอบแทนที่สูงขึ้น');
     } else {
         if (var_Result_1 < minX) {
             //$Healthy('#divHealthy_Output_1 #divLine').css('top', '255px');
+            //Low
             $Healthy('#divHealthy_Output_1 #divLine').css('top', '170px');
             if (var_Result_1 == 0) {
                 var_Selected_1 = 4;
@@ -169,12 +175,15 @@ function calHealthy() {
                 $Healthy('#txt_Result_Value').val(fn_addCommas(parseInt(zz)));
             }
         } else if (minX <= var_Result_1 && var_Result_1 <= maxX) {
+            //Mid
             var_Selected_1 = 1;
-            $Healthy('#divHealthy_Output_1 #divLine').css('top', '185px');
+            //$Healthy('#divHealthy_Output_1 #divLine').css('top', '185px');
+            $Healthy('#divHealthy_Output_1 #divLine').css('top', '104');
             $Healthy('#txt_Result_Value').hide();
         } else if (maxX < var_Result_1) {
             var_Selected_1 = 2;
             //$Healthy('#divHealthy_Output_1 #divLine').css('top', '115px');
+            //High
             $Healthy('#divHealthy_Output_1 #divLine').css('top', '33px');
 
             $Healthy('#txt_Result_Value').show();
@@ -193,22 +202,26 @@ function calHealthy() {
 
         //Set Error
 
-        debugger
         var _msg = ''
+        var _advice = '';
+        debugger
+        console.log(var_Selected_1);
+
         if ((var_Selected_1 == 4) || (var_Selected_1 == 3)) {
             _msg = 'คุณมีสินทรัพย์สภาพคล่องน้อยกว่ามาตรฐาน ซึ่งอาจจะไม่เพียงพอในการใช้จ่ายกรณีฉุกเฉินครวรีบสำรองสินทรัพย์สภาพคล่องเพิ่มเติม';
-        } else if (var_Selected_1 == 2)
-        {
-
-             _msg = 'คุณมีสินทรัพย์สภาพคล่องมากเกินไป ทำให้คุณเสียโอกาศ';
+            _advice = 'ข้อแนะนำ: ควรเพิ่มสินทรัพย์สภาพคล่องอีกประมาณ';
+        } else if (var_Selected_1 == 2) {
+            _msg = 'คุณมีสินทรัพย์สภาพคล่องมากเกินไป ทำให้คุณเสียโอกาศที่จะได้รับผลตอบแทนากเงินส่วนเกินดังกล่าว แนะนำให้นำสภาพคล่องส่วนเกินไปลงทุนเพื่อสร้างโอกาศในการรับผลตอบแทนที่สูงขึ้น';
+            _advice = 'ข้อแนะนำ: ควรลดสินทรัพย์สภาพคล่องอีกประมาณ';
+        } else {
+            _msg = 'คุณมีสินทรัพย์สภาพคล่องอยู่ในเกณฑ์เหมาะสมแล้ว';
+            _advice = '';
         }
 
-
-
-        var _advice = 'ข้อแนะนำ: ควรเพิ่มสินทรัพย์สภาพคล่องอีกประมาณ';
-        if ((var_Selected_1 == 3) || (var_Selected_1 == 2)) {
+        //if ((var_Selected_1 == 3) || (var_Selected_1 == 2)) {
+        //4 คือไม่มี
+        if ((var_Selected_1 != 4)) {
             //แนะนำ
-
             $Healthy('#divHealthy_Output_1 #lbladvice').text(_advice);
 
             //Move Top icon
@@ -218,6 +231,8 @@ function calHealthy() {
 
         $Healthy('#divHealthy_Output_1 #lblmsg').text(_msg);
 
+
+        
         if (var_Selected_1 == 4) {
             $Healthy('#divHealthy_Output_1 #divEmo').css('background-image', 'url(/PublishingImages/Tax/emo3.png)');
         } else {
@@ -225,6 +240,9 @@ function calHealthy() {
         }
 
         fn_Counter1('1', var_Result_1);
+
+        // Tab 2
+
         var var_Result_2 = ((parseInt(hl_debit) / parseInt(hl_asset)) * 100).toFixed(2);
         $Healthy('#txt_hl_Result_2').show();
         if (isNaN(var_Result_2)) {
@@ -233,6 +251,7 @@ function calHealthy() {
             var_Result_2 = 999;
         }
         gen_HL_Graph(var_Result_2, '2', 50);
+        //
 
         var var_Result_3 = (((parseInt(hl_mortgage) + parseInt(hl_car)) / parseInt(hl_income)) * 100).toFixed(2);
         $Healthy('#txt_hl_Result_3').show();
@@ -434,7 +453,7 @@ function fn_Infinity(varID) {
 
     //$Healthy('#divHealthy_Output_' + varID + ' #divEmo').css('left','320px');
     //$Healthy('#divHealthy_Output_' + varID + ' #divEmo').css('top','105px');
-
+    $Healthy('#divHealthy_Output_' + varID + ' #divEmo').removeClass('iconCorner');
     $Healthy('#divHealthy_Output_' + varID + ' #divEmo').addClass('iconCenter');
 }
 
