@@ -200,7 +200,7 @@ function calHealthy() {
         } else if (var_Selected_1 == 2)
         {
 
-             _msg = 'XXXXX';
+             _msg = 'คุณมีสินทรัพย์สภาพคล่องมากเกินไป ทำให้คุณเสียโอกาศ';
         }
 
 
