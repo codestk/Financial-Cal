@@ -155,9 +155,8 @@ function calHealthy() {
         //$Healthy('#divHealthy_Output_1 #divResultContent').css('background-image','url(/PublishingImages/Tax/Thai/bg_title/result1/content2_noval.png)');
         //ไม่มีค่าใช้จ่าย
         $Healthy('#divHealthy_Output_1 #divEmo').css('background-image', 'url(/PublishingImages/Tax/emo' + var_Selected_1 + '.png)');
-          $Healthy('#divEmo').addClass('iconCenter');
-            $Healthy('#divEmo').removeClass('iconCorner');
-        
+        $Healthy('#divEmo').addClass('iconCenter');
+        $Healthy('#divEmo').removeClass('iconCorner');
 
         // $Healthy('#divHealthy_Output_1 #msg').text('คุณมีสินทรัพย์สภาพคล่องมากเกินไป ทำให้คุณเสียโอกาสที่จะได้รับผลตอบแทนจากเงินส่วนเกินดังกล่าว แนะนำให้นำสภาพคล่องส่วนเกินไปลงทุนเพื่อสร้างโอกาสในการรับผลตอบแทนที่สูงขึ้น');
     } else {
@@ -231,8 +230,6 @@ function calHealthy() {
 
         $Healthy('#divHealthy_Output_1 #lblmsg').text(_msg);
 
-
-        
         if (var_Selected_1 == 4) {
             $Healthy('#divHealthy_Output_1 #divEmo').css('background-image', 'url(/PublishingImages/Tax/emo3.png)');
         } else {
