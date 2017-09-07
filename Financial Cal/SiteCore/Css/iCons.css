@@ -1,4 +1,14 @@
-﻿.iconNext {
+﻿.Line {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    top: 100px;
+    background-image: url(/PublishingImages/Tax/line.png);
+}
+
+
+
+.iconNext {
     height: 30px;
     width: auto;
 }
@@ -39,7 +49,7 @@
 
 .iconCorner {
     position: absolute;
-       top: -64px;
+    top: -64px;
     right: -64px;
     width: 70px;
     height: 70px;

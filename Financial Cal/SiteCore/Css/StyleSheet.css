@@ -130,11 +130,25 @@ div[data-toggle="buttons"] label {
 
 /*Common===*/
 
+
+
 /*Tab Ui===*/
 .list-type3 {
     margin: 0 auto;
     width: 500px;
 }
+
+
+ 
+    .iconNumber label {
+     
+  
+  
+    }
+
+    .list-type3 ol {
+        list-style: none;
+    }
 
     .list-type3 li, .list-type3 a {
         float: left;
@@ -143,7 +157,6 @@ div[data-toggle="buttons"] label {
         position: relative;
         font-size: 15px;
         margin-bottom: 12px;
-        font-family: 'Raleway', sans-serif;
         transition: background-color 1.5s ease;
     }
 
@@ -197,5 +210,8 @@ div[data-toggle="buttons"] label {
             .list-type3 a:hover:before {
                 border-color: transparent #0089e0 transparent transparent;
             }
+
+
+
 
 /*===Tab Ui*/
