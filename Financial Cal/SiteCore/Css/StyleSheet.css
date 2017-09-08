@@ -21,6 +21,18 @@
 
 /*=== TextColor*/
 
+/*Section==*/
+section.blue {
+    background-color: #25395a;
+    color: #fff;
+}
+.cssInput {
+background-color:transparent;
+ 
+}
+
+/*==Section*/
+
 /*Form Control === */
 
 div.borderDashed:before {
@@ -43,8 +55,9 @@ label.btn span {
 }
 
 label input[type="radio"] ~ i.fa.fa-circle-o {
-    color: #c8c8c8;
+    color: #999;
     display: inline;
+     font-size: 18px;
 }
 
 label input[type="radio"] ~ i.fa.fa-dot-circle-o {
@@ -58,6 +71,8 @@ label input[type="radio"]:checked ~ i.fa.fa-circle-o {
 label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o {
     color: #7AA3CC;
     display: inline;
+
+       font-size: 18px;
 }
 
 label:hover input[type="radio"] ~ i.fa {
@@ -130,88 +145,78 @@ div[data-toggle="buttons"] label {
 
 /*Common===*/
 
-
-
 /*Tab Ui===*/
 .list-type3 {
     margin: 0 auto;
     width: 500px;
 }
 
+.iconNumber label {
+}
 
- 
-    .iconNumber label {
-     
-  
-  
-    }
+.list-type3 ol {
+    list-style: none;
+}
 
-    .list-type3 ol {
-        list-style: none;
-    }
+.list-type3 li, .list-type3 a {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    font-size: 15px;
+    margin-bottom: 12px;
+    transition: background-color 1.5s ease;
+}
 
-    .list-type3 li, .list-type3 a {
+.list-type3 a {
+    padding: 0 60px 0 12px;
+    background: #0089e0;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+    .list-type3 a:before {
+        content: "";
         float: left;
-        height: 35px;
-        line-height: 35px;
-        position: relative;
-        font-size: 15px;
-        margin-bottom: 12px;
-        transition: background-color 1.5s ease;
+        position: absolute;
+        top: 0;
+        left: -12px;
+        width: 0;
+        height: 0;
+        border-color: transparent #0089e0 transparent transparent;
+        border-style: solid;
+        border-width: 18px 12px 18px 0;
     }
 
-    .list-type3 a {
-        padding: 0 60px 0 12px;
-        background: #0089e0;
-        color: #fff;
-        text-decoration: none;
-        -moz-border-radius-bottomright: 4px;
-        -webkit-border-bottom-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        -moz-border-radius-topright: 4px;
-        -webkit-border-top-right-radius: 4px;
-        border-top-right-radius: 4px;
+    .list-type3 a:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0;
+        float: left;
+        width: 6px;
+        height: 6px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        background: #fff;
+        -moz-box-shadow: -1px -1px 2px #004977;
+        -webkit-box-shadow: -1px -1px 2px #004977;
+        box-shadow: -1px -1px 2px #004977;
     }
 
-        .list-type3 a:before {
-            content: "";
-            float: left;
-            position: absolute;
-            top: 0;
-            left: -12px;
-            width: 0;
-            height: 0;
+    .list-type3 a:hover {
+        background: #555;
+    }
+
+        .list-type3 a:hover:before {
             border-color: transparent #0089e0 transparent transparent;
-            border-style: solid;
-            border-width: 18px 12px 18px 0;
         }
-
-        .list-type3 a:after {
-            content: "";
-            position: absolute;
-            top: 15px;
-            left: 0;
-            float: left;
-            width: 6px;
-            height: 6px;
-            -moz-border-radius: 2px;
-            -webkit-border-radius: 2px;
-            border-radius: 2px;
-            background: #fff;
-            -moz-box-shadow: -1px -1px 2px #004977;
-            -webkit-box-shadow: -1px -1px 2px #004977;
-            box-shadow: -1px -1px 2px #004977;
-        }
-
-        .list-type3 a:hover {
-            background: #555;
-        }
-
-            .list-type3 a:hover:before {
-                border-color: transparent #0089e0 transparent transparent;
-            }
-
-
-
 
 /*===Tab Ui*/
