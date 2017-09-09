@@ -25,7 +25,13 @@
 section.blue {
     background-color: #25395a;
     color: #fff;
+    font-size:16px;
 }
+section.blue  {
+   
+    color: #fff;
+}
+
 .cssInput {
 background-color:transparent;
  

@@ -1,6 +1,9 @@
 ﻿/* fix radius*/
 
 /*button*/
+/*body {
+font-size:16px;*/
+}
 
 .btnbbl {
     background-color: #003399;
@@ -17,6 +20,50 @@
         background-color: #323C46;
         color: #6798D3;
     }
+
+.lblBBL {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    pointer-events: none;
+    left: 30px;
+    top: 18px;
+}
+
+.lblInput {
+    font-size: 25px;
+    /*padding: 10px 10px 10px 5px;*/
+    display: block;
+    /*width: 300px;*/
+    border: none;
+    border-color: #435875;
+    /*border-bottom: 1px solid #757575;*/
+    /*text-align: right;*/
+    background-color: transparent;
+    border-radius: 50px;
+    color: #ccc;
+    width: 100%;
+}
+
+   .textHighlight {
+        color: #fff;
+    }
+   .textlight {
+        color:#D3D0C9;
+    }
+
+.lText {
+    font-size: 4em;
+}
+
+.mText {
+    font-size: 1em;
+}
+
+.sText {
+    font-size: 0.9em;
+}
 
 /*Text Box*/
 .group {
@@ -37,7 +84,7 @@
         background-color: transparent;
         border-radius: 50px;
         color: #ccc;
-        width:100%
+        width: 100%;
     }
 
         .group input:focus {
@@ -46,7 +93,7 @@
         }
 
     /* LABEL ======================================= */
-    .group label    {
+    .group label {
         color: #999;
         font-size: 18px;
         font-weight: normal;
@@ -149,25 +196,26 @@ input:focus ~ .highlight {
     }
 }
 
-
-
-
 /*Step*/
 .stepwizard-step p {
     margin-top: 10px;
 }
+
 .stepwizard-row {
     display: table-row;
 }
+
 .stepwizard {
     display: table;
     width: 50%;
     position: relative;
 }
+
 .stepwizard-step button[disabled] {
     opacity: 1 !important;
     filter: alpha(opacity=100) !important;
 }
+
 .stepwizard-row:before {
     top: 14px;
     bottom: 0;
@@ -178,11 +226,13 @@ input:focus ~ .highlight {
     background-color: #ccc;
     z-order: 0;
 }
+
 .stepwizard-step {
     display: table-cell;
     text-align: center;
     position: relative;
 }
+
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -192,3 +242,318 @@ input:focus ~ .highlight {
     line-height: 1.428571429;
     border-radius: 15px;
 }
+
+/*********************
+ * Graph Bars styles *
+ *********************/
+
+/* Bar wrapper - hides the inner bar
+   when it goes below the bar, required */
+.bar-wrapper {
+    overflow: hidden;
+}
+    /* Make markers visible */
+    .bar-wrapper.with-markers {
+        padding-right: 3em;
+        margin-right: -3em;
+    }
+
+/* Bar container */
+.bar-container {
+    position: relative;
+    /* should be at least equal
+     to the top offset of
+     background casing */
+    /* because back casing is
+     positioned higher than
+     actual bar */
+    margin-top: 2.5em;
+    /* required, we have to define
+     the width of a bar */
+    width: 12.5em;
+    /* Bars size */
+    font-size: 1em;
+    /* Bars height */
+    height: 20em;
+}
+    /* right bottom patch - make sure
+   inner bar's right bottom corner
+   is "cut" when it slides down */
+    .bar-container:before {
+        content: "";
+        position: absolute;
+        z-index: 3; /* to be above .bar-inner */
+        bottom: 0;
+        left: 0;
+        /* Use bottom border to shape triangle */
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 2.5em 2.5em 0;
+        border-color: transparent transparent #fff;
+    }
+
+/** BACK CASING **/
+/* Back panel */
+.bar-background {
+    width: 10em;
+    height: 100%;
+    position: absolute;
+    top: -2.5em;
+    left: 0;
+    z-index: 1; /* just for reference */
+    background-color: rgba(160, 160, 160, .1);
+}
+
+    .bar-background:before,
+    .bar-background:after {
+        content: "";
+        position: absolute;
+    }
+
+    /* Bottom panel */
+    .bar-background:before {
+        bottom: -2.5em;
+        left: 1.25em;
+        width: 10em;
+        height: 2.5em;
+        background-color: rgba(160, 160, 160, .2);
+        -webkit-transform: skew(45deg);
+        -moz-transform: skew(45deg);
+        -o-transform: skew(45deg);
+        -ms-transform: skew(45deg);
+        transform: skew(45deg);
+    }
+
+    /* Left back panel */
+    .bar-background:after {
+        top: 1.25em;
+        left: 100%;
+        width: 2.5em;
+        height: 100%;
+        background-color: rgba(160, 160, 160, .05);
+        /* skew only the Y-axis */
+        -webkit-transform: skew(0deg, 45deg);
+        -moz-transform: skew(0deg, 45deg);
+        -o-transform: skew(0deg, 45deg);
+        -ms-transform: skew(0deg, 45deg);
+        transform: skew(0deg, 45deg);
+    }
+
+/** FRONT CASING **/
+/* Front panel */
+.bar-foreground {
+    /* be above .bar-background and .bar-inner */
+    z-index: 3;
+    background-color: #a0a0a0;
+    background-color: rgba(160, 160, 160, .1);
+}
+
+.bar-foreground,
+.bar-inner {
+    position: absolute;
+    width: 10em;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+    .bar-foreground:before,
+    .bar-foreground:after,
+    .bar-inner:before,
+    .bar-inner:after {
+        content: "";
+        position: absolute;
+    }
+
+    /* Right front panel */
+    .bar-foreground:before,
+    .bar-inner:before {
+        top: -1.25em;
+        left: -2.5em;
+        width: 2.5em;
+        height: 100%;
+        background-color: rgba(160, 160, 160, .27);
+        -webkit-transform: skew(0deg, 45deg);
+        -moz-transform: skew(0deg, 45deg);
+        -o-transform: skew(0deg, 45deg);
+        -ms-transform: skew(0deg, 45deg);
+        transform: skew(0deg, 45deg);
+    }
+
+    /* Top front panel */
+    .bar-foreground:after,
+    .bar-inner:after {
+        top: -2.5em;
+        left: -1.25em;
+        width: 100%;
+        height: 2.5em;
+        /*background-color: rgba(160, 160, 160, .2);*/
+        background-color: red;
+        -webkit-transform: skew(45deg);
+        -moz-transform: skew(45deg);
+        -o-transform: skew(45deg);
+        -ms-transform: skew(45deg);
+        transform: skew(45deg);
+    }
+
+/** BAR's inner block **/
+.bar-inner {
+    z-index: 2; /* to be above .bar-background */
+    top: auto; /* reset position top */
+    background-color: #053e7b;
+    background-color: rgba(5, 62, 123, .7);
+    height: 0;
+    bottom: -2.5em;
+    color: transparent; /* hide text values */
+    -webkit-transition: height 1s linear, bottom 1s linear;
+    -moz-transition: height 1s linear, bottom 1s linear;
+    -o-transition: height 1s linear, bottom 1s linear;
+    -ms-transition: height 1s linear, bottom 1s linear;
+    transition: height 1s linear, bottom 1s linear;
+}
+    /* Front & Side panels*/
+    .bar-inner,
+    .bar-inner:before {
+        background-color: rgba(5, 62, 123, .7);
+    }
+        /* Top panel */
+        .bar-inner:after {
+            background-color: rgba(5, 62, 123, .6);
+        }
+
+/** TICKS LABELS **/
+.bar-foreground .marker {
+    position: absolute;
+    line-height: .2em;
+    font-size: .7em;
+    font-weight: normal;
+    width: 100%;
+    left: 0;
+    color: #5a5a5a;
+}
+
+    .bar-foreground .marker:before,
+    .bar-foreground .marker:after {
+        content: "";
+        position: absolute;
+        border-style: none none dotted;
+        border-color: rgba(177, 177, 177, .4);
+        border-width: 0 0 .15em;
+        background: rgba(221, 221, 221, .3);
+    }
+
+    /* Front tick line */
+    .bar-foreground .marker:before {
+        width: 100%;
+        bottom: -.1em;
+        left: 0;
+    }
+
+    /* Side tick line */
+    .bar-foreground .marker:after {
+        width: 35%;
+        bottom: 1.75em;
+        left: -4.3em;
+        z-index: 2;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .bar-foreground .marker span {
+        position: absolute;
+        left: 103%;
+        top: -.1em;
+    }
+
+/* Position the lines */
+.p25 {
+    bottom: 25%;
+}
+
+.p50 {
+    bottom: 50%;
+}
+
+.p75 {
+    bottom: 75%;
+}
+
+/****************
+ *    Colors    *
+ ****************/
+/* Bar patch color - should as bar's background */
+.bar-container:before {
+    border-color: transparent transparent #164b7f;
+}
+
+/* Back panel */
+.bar-background {
+    /*background-color: rgba(160, 160, 160, .1);*/
+    background-image: linear-gradient( to bottom, #ffffff, #f06d06, rgb(255, 255, 0), green );
+}
+    /* Bottom panel */
+    .bar-background:before {
+        background-color: rgba(160, 160, 160, .2);
+    }
+    /* Back Side panel */
+    .bar-background:after {
+        background-color: rgba(160, 160, 160, .05);
+    }
+/* Front panel */
+.bar-foreground {
+    /*background-color: rgba(160, 160, 160, .1);*/
+    border-color: #ccc;
+    background-image: linear-gradient( to bottom, red, #f06d06, rgb(255, 255, 0), green );
+}
+    /* Front Side panel */
+    .bar-foreground:before {
+        /*background-color: rgba(160, 160, 160, .27);*/
+        background-image: linear-gradient( to bottom, red, #f06d06, rgb(255, 255, 0), green );
+    }
+
+/* Inner Side panel */
+.bar-inner,
+.bar-inner:before {
+    background-color: #053e7b;
+    background-color: rgba(133, 165, 204, .3);
+}
+    /* Inner Top panel */
+    .bar-inner:after {
+        background-color: rgba(133, 165, 204, .2);
+    }
+
+/* Bar Labels colors */
+.bar-foreground .marker {
+    color: #ccc;
+}
+
+    .bar-foreground .marker:before,
+    .bar-foreground .marker:after {
+        border-color: rgba(177, 177, 177, .4);
+        background: rgba(221, 221, 221, .3);
+    }
+
+/****************
+ *    Sizes     *
+ ****************/
+.bar-container {
+    /* The normal size of a bar*/
+    font-size: 12px;
+    /* Bars height */
+    height: 20em;
+}
+
+/* Make markers visible */
+.bar-wrapper.with-markers {
+    padding-right: 4em;
+    margin-right: -4em;
+}
+
+    .bar-wrapper.with-markers.rtl {
+        padding-left: 4em;
+        margin-left: -4em;
+    }
