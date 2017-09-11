@@ -89,6 +89,14 @@ ul.SteppedProgress {
             cursor: pointer;
         }
 
+.SteppedProgress li.disabled:before {
+     cursor: not-allowed;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+}
+
     .SteppedProgress li:before {
         content: counter(step);
         counter-increment: step;
