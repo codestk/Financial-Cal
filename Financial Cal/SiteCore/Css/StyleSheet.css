@@ -22,6 +22,9 @@
 /*=== TextColor*/
 
 /*Section==*/
+section {
+padding-top:30px;
+}
 section.blue {
     background-color: #25395a;
     color: #fff;
@@ -225,4 +228,24 @@ div[data-toggle="buttons"] label {
             border-color: transparent #0089e0 transparent transparent;
         }
 
-/*===Tab Ui*/
+/**/
+.lblChart {
+
+    margin-top: -25px;
+    color:#c8c8c8;
+    font-size:.8em;
+    text-align:center;
+}
+
+.lblRangChart{
+    bottom: -9px;width: 388px !important;position: absolute;width: 100%;right: 102px;
+
+}
+
+
+.divAdvice{
+    /*margin-top: 25%;
+    margin-bottom: 20px;*/
+ margin-top:25px;
+
+}
