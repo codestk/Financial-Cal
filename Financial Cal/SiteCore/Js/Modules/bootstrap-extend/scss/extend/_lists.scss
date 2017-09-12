@@ -1,0 +1,272 @@
+//=====================================================================
+// Unordered list variants mixins (disc, circle and square)
+//
+// Easily pump out default styles for unordered lists
+//
+//	TODO:	Separate shapes and colors into two classes so that there
+//			are less classes that get generated
+//=====================================================================
+//  Disc variant for unordered lists
+//=====================================================================
+@mixin urd-disc-variant ($background, $border){
+    & li{
+    	&:before{
+			border-radius: 4px;
+			background-color: $background;
+			border: 1px solid $border;
+    	}
+    }
+}
+//=====================================================================
+//  Circle variant for unordered lists
+//=====================================================================
+@mixin urd-circle-variant ($border){
+    & li{ 
+    	&:before{
+			border-radius: 4px;
+			border: 1px solid $border;
+    	}
+    }
+}
+//=====================================================================
+//  Square variant for unordered lists
+//=====================================================================
+@mixin urd-square-variant ($background, $border){
+    & li{
+    	&:before{
+			border-radius: 2px;
+			background-color: $background;
+			border: 1px solid $border;
+    	}
+    }
+}
+//=====================================================================
+//  Unordered list alternate size
+//=====================================================================
+ul.urd-big{
+    & li{
+    	&:before{
+			content: "";
+			top: 1.5px !important;
+	  		left: 1.5px !important;
+	  		bottom: 1.5px !important;
+	  		right: 1.5px !important;
+			padding: 3.5px !important;
+			margin: 2px 8px;
+    	}
+    }	
+}
+//=====================================================================
+//  Unordered list styles
+//=====================================================================
+ul.urd{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+    & li{
+    	padding-left: 16px; 
+    	&:before{
+    		display: inline-block;
+      		position: relative;
+			content: "";
+			top: 1px;
+	  		left: 1px;
+	  		bottom: 1px;
+	  		right: 1px;
+			padding: 2px;
+			margin: 2px 8px;
+    	}
+    }
+}
+.urd-disc-default{
+	@include urd-disc-variant($shadeBlackGray, darken($shadeBlackGray,12%));
+}
+.urd-circle-default{
+	@include urd-circle-variant($shadeBlackGray);
+}
+.urd-square-default{
+	@include urd-square-variant($shadeBlackGray, darken($shadeBlackGray,12%));
+}
+.urd-disc-primary{
+	@include urd-disc-variant($shadeBlue, $shadeDarkBlue);
+}
+.urd-circle-primary{
+	@include urd-circle-variant($shadeDarkBlue);
+}
+.urd-square-primary{
+	@include urd-square-variant($shadeBlue, $shadeDarkBlue);
+}
+.urd-disc-success{
+	@include urd-disc-variant($shadeGreen, $shadeDarkGreen);
+}
+.urd-circle-success{
+	@include urd-circle-variant($shadeDarkGreen);
+}
+.urd-square-success{
+	@include urd-square-variant($shadeGreen, $shadeDarkGreen);
+}
+.urd-disc-info{
+	@include urd-disc-variant($shadeCyan, $shadeDarkCyan);
+}
+.urd-circle-info{
+	@include urd-circle-variant($shadeDarkCyan);
+}
+.urd-square-info{
+	@include urd-square-variant($shadeCyan, $shadeDarkCyan);
+}
+.urd-disc-warning{
+	@include urd-disc-variant($shadeOrange, $shadeDarkOrange);
+}
+.urd-circle-warning{
+	@include urd-circle-variant($shadeDarkOrange);
+}
+.urd-square-warning{
+	@include urd-square-variant($shadeOrange, $shadeDarkOrange);
+}
+.urd-disc-danger{
+	@include urd-disc-variant($shadeRed, $shadeDarkRed);
+}
+.urd-circle-danger{
+	@include urd-circle-variant($shadeDarkRed);
+}
+.urd-square-danger{
+	@include urd-square-variant($shadeRed, $shadeDarkRed);
+}
+.urd-disc-notice{
+	@include urd-disc-variant($shadePurple, $shadeDarkPurple);
+}
+.urd-circle-notice{
+	@include urd-circle-variant($shadeDarkPurple);
+}
+.urd-square-notice{
+	@include urd-square-variant($shadePurple, $shadeDarkPurple);
+}
+//=====================================================================
+// Ordered list variants mixins (disc, circle and square)
+//
+// Easily pump out default styles for ordered lists
+//=====================================================================
+//  Disc variant for ordered lists
+//=====================================================================
+@mixin ord-disc-variant ($color, $background, $border) {
+    & li{
+    	&:before{
+    		color: $color;
+			border-radius: 50%;
+			background-color: $background;
+			border: 1px solid $border;
+    	}
+    }
+}
+//=====================================================================
+//  Circle variant for ordered lists
+//=====================================================================
+@mixin ord-circle-variant ($border){
+    & li{
+    	&:before{
+    		color: $shadeBlackGray;
+			border-radius: 50%;
+			border: 1px solid $border;
+    	}
+    }
+}
+//=====================================================================
+//  Square variant for ordered lists
+//=====================================================================
+@mixin ord-square-variant ($color, $background, $border){
+    & li{
+    	&:before{
+    		color: $color;
+			border-radius: 4px;
+			background-color: $background;
+			border: 1px solid $border;
+    	}
+    }
+}
+//=====================================================================
+//  Ordered list styles
+//=====================================================================
+ol.ord{
+	counter-reset: item;
+    padding-left: 16px;
+    margin: 0;
+    & li{
+    	display: block;
+    	padding-left: 0px;
+    	left: -10px;
+    	&:before{
+    		content: "\00a0" counter(item) ".\00a0";
+            counter-increment: item;
+    		display: inline-block;
+      		position: relative;
+			top: 2px;
+	  		left: 2px;
+	  		bottom: 2px;
+	  		right: 2px;
+	  		margin: 2px 8px;
+    	}
+    }	
+}
+.ord-disc-default{
+	@include ord-disc-variant($shadeBlackGray, $shadeLightGray, $shadeDarkGray);
+}
+.ord-circle-default{
+	@include ord-circle-variant($shadeBlackGray);
+}
+.ord-square-default{
+	@include ord-square-variant($shadeBlackGray, $shadeLightGray, $shadeDarkGray);
+}
+.ord-disc-primary{
+	@include ord-disc-variant($shadeWhite, $shadeBlue, $shadeDarkBlue);
+}
+.ord-circle-primary{
+	@include ord-circle-variant($shadeDarkBlue);
+}
+.ord-square-primary{
+	@include ord-square-variant($shadeWhite, $shadeBlue, $shadeDarkBlue);
+}
+.ord-disc-success{
+	@include ord-disc-variant($shadeWhite, $shadeGreen, $shadeDarkGreen);
+}
+.ord-circle-success{
+	@include ord-circle-variant($shadeDarkGreen);
+}
+.ord-square-success{
+	@include ord-square-variant($shadeWhite, $shadeGreen, $shadeDarkGreen);
+}
+.ord-disc-info{
+	@include ord-disc-variant($shadeWhite, $shadeCyan, $shadeDarkCyan);
+}
+.ord-circle-info{
+	@include ord-circle-variant($shadeDarkCyan);
+}
+.ord-square-info{
+	@include ord-square-variant($shadeWhite, $shadeCyan, $shadeDarkCyan);
+}
+.ord-disc-warning{
+	@include ord-disc-variant($shadeWhite, $shadeOrange, $shadeDarkOrange);
+}
+.ord-circle-warning{
+	@include ord-circle-variant($shadeDarkOrange);
+}
+.ord-square-warning{
+	@include ord-square-variant($shadeWhite, $shadeOrange, $shadeDarkOrange);
+}
+.ord-disc-danger{
+	@include ord-disc-variant($shadeWhite, $shadeRed, $shadeDarkRed);
+}
+.ord-circle-danger{
+	@include ord-circle-variant($shadeDarkRed);
+}
+.ord-square-danger{
+	@include ord-square-variant($shadeWhite, $shadeRed, $shadeDarkRed);
+}
+.ord-disc-notice{
+	@include ord-disc-variant($shadeWhite, $shadePurple, $shadeDarkPurple);
+}
+.ord-circle-notice{
+	@include ord-circle-variant($shadeDarkPurple);
+}
+.ord-square-notice{
+	@include ord-square-variant($shadeWhite, $shadePurple, $shadeDarkPurple);
+}

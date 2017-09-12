@@ -1,0 +1,23 @@
+//=====================================================================
+//  Collapse Button - Requires Javascript to function properly
+//    Linked Javascript file: (collapsetoggle.js)
+//=====================================================================
+.btn.btn-toggle:before{
+    font-family: 'Glyphicons Halflings';
+    content: "\002b";
+}
+.btn.btn-untoggle:before{
+  font-family: 'Glyphicons Halflings';
+  content: "\2212";
+}
+.btn.btn-toggle, .btn.btn-untoggle{
+  font-size: 14px;
+  line-height: 1.58465306;
+  font-weight: 200;
+  &+label{
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
