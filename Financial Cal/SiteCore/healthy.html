@@ -6,52 +6,42 @@
     <!--<link href="../Content/bootstrap.css" rel="stylesheet" />-->
     <link href="Css/bootstrap.css" rel="stylesheet" />
 
-    <script src="../Scripts/jquery-1.10.2.js"></script>
-    <!--<script src="../PublishingJavascript/jquery-1.6.2.min.js"></script>-->
-
-    <script src="../Scripts/jquery-1.11.2.min.js"></script>
-    <!--<script src="../PublishingJavascript/Landing_Functions.js"></script>-->
-    <!--<link href="../Style Library/Landing_Pages.css" rel="stylesheet" />
-
-    <link href="../Style Library/Tax/Eng/tax.css" rel="stylesheet" />-->
+    <!--<script src="../Scripts/jquery-1.10.2.js"></script>-->
+    <script src="Scripts/jquery-1.11.2.min.js"></script>
+    <!--<script src="../Scripts/jquery-1.11.2.min.js"></script>-->
     <!--BBl BASE-->
     <link href="Css/bblBase.css" rel="stylesheet" />
 
     <!--P Noom-->
-    <script src="../PublishingJavascript/Tax/tax.js"></script>
-    <script src="../PublishingJavascript/Tax/fn_healthy.js"></script>
-    <!--<script type="text/javascript" src="/PublishingJavascript/Tax/fn_healthy.js"></script>
+    <!--<script src="../PublishingJavascript/Tax/tax.js"></script>
     <script src="../PublishingJavascript/Tax/fn_healthy.js"></script>-->
-    <!--<link href="../Style Library/Tax/Eng/tax.css" rel="stylesheet" />-->
+
+    <script src="Scripts/tax.js"></script>
+    <!--<script src="Scripts/new_tax.js"></script>-->
+    <script src="Scripts/fn_healthy.js"></script>
 
     <link href="Css/StyleSheet.css" rel="stylesheet" />
     <link href="Css/iCons.css" rel="stylesheet" />
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
-  
     <!--Step-->
     <link href="Css/ProgressIndicator.css" rel="stylesheet" />
 
-
     <!--Bootstap Extend-->
-    <link href="Js/Modules/bootstrap-extend/css/bootstrap-extend.css" rel="stylesheet" />
-    <script src="Js/Modules/bootstrap-extend/js/bootstrap-extend.js"></script>
+    <link href="Modules/bootstrap-extend/css/bootstrap-extend.css" rel="stylesheet" />
+    <script src="Modules/bootstrap-extend/js/bootstrap-extend.js"></script>
 </head>
 <body>
-   
 
-
-
-    <div class="container">
+    <!--<div class="container">
         <div class="btn-group btn-group-justified btn-group-lg">
             <a href="#" class="btn btn-default btn-sm"><i class="fa fa-flip-vertical fa-fw fa-star"></i>Activity</a>
             <a href="#" class="btn btn-default"><i class="fa fa-fw fa-th-list"></i>Invoices</a>
             <a href="#" class="btn btn-default"><i class="fa fa-fw fa-paypal"></i> Payments</a>
         </div>
-    </div>
+    </div>-->
     <section class="blue FinanCalBaseText">
 
-        <div class="holder container center-block">
+        <!--<div class="holder container center-block">
             <ul class="SteppedProgress">
                 <li class="complete">
                     <span>
@@ -69,44 +59,32 @@
                     </span>
                 </li>
             </ul>
+        </div>-->
+
+        <div class="container">
+
+   
+
+
+
+            <!--<div class="btn-group btn-group-justified" role="group" aria-label="...">-->
+
+   <div class="btn-group btn-group-justified btn-group-lg bbl-Middle-Menu">
+            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-flip-vertical fa-fw fa-star"></i>ข้อมูลส่วนบุคคล
+</a>
+            <a href="#" class="btn btn-default"><i class="fa fa-fw fa-th-list"></i>ข้อมูลทางการเงิน
+</a>
+            <a href="#" class="btn btn-default"><i class="fa fa-fw fa-paypal"></i> วิเคราะห์สุขภาพทางการเงิน</a>
         </div>
 
-        <div class="container" style="">
 
-            <div class="stepwizard col-md-offset-3" style="margin-top:20px;">
-                <div class="stepwizard-row setup-panel">
-                    <div class="stepwizard-step">
-                        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                        <p>
-                            ข้อมูลส่วนบุคคล
-                        </p>
-                    </div>
-                    <div class="stepwizard-step">
-                        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                        <p>ข้อมูลทางการเงิน</p>
-                    </div>
-                    <div class="stepwizard-step">
-                        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                        <p>วิเคราะห์สุขภาพทางการเงิน</p>
-                    </div>
-                </div>
-            </div>
-
+          
             <div id="divHealthy_Input_1" class="row" style="display:block">
                 <h1 class="text-center"><a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> ข้อมูลส่วนบุคคล</h1>
-                <!--<div class="row">
-                    <div class="col-md-12" onClick="changeSubMenu(2);">
-                        <div class="text-right FinanCalLinkText">
-                            2.
 
-                            ข้อมูลทางการเงิน           <img src="Image/icon/right-arrow.svg" class="iconNext" />
-                        </div>
-                    </div>
-                </div>-->
+                <div class="col-md-12">
 
-                <div class="col-md-12" style="">
-
-                    <div class="text-center col-md-offset-4 col-md-4">
+                    <div class="text-center col-md-offset-3 col-md-6">
 
                         <!--lblAgr-->
                         <div class="group">
@@ -127,65 +105,26 @@
                             <h2>การมีบุตร</h2>
 
                             <div class="btn-group  " data-toggle="buttons">
-                                <label class="btn ">
+                                <!--<label class="btn ">
                                     <input type='radio' id='rad_Child' name='rad_Child' value='1'><i class="fa fa-circle-o fa-2x">  มี  </i><i class="fa fa-dot-circle-o fa-2x"> มี</i>
                                 </label>
                                 <label class="btn active">
                                     <input type='radio' id='rad_Child' name='rad_Child' value='2' checked><i class="fa fa-circle-o fa-2x"> ไม่มี </i><i class="fa fa-dot-circle-o fa-2x"> ไม่มี</i>
-                                </label>
-
-                                <!--<input type="radio" class="rdbtn rdbtn-default" id="rdb-default"><label for="rdb-default">Default</label>-->
-                                <input type="radio" class="rdbtn rdbtn-primary" id="rdb-primary"  value='1' name="rad_Child"><label for="rdb-primary">มี</label>
-                                <input type="radio" class="rdbtn rdbtn-primary" id="rdb-success" value='2'  name="rad_Child"><label for="rdb-success">ไม่มี</label>
-                                <!--<input type="radio" class="rdbtn rdbtn-info" id="rdb-info" name="rd-group"><label for="rdb-info">Info</label>
-                                <input type="radio" class="rdbtn rdbtn-warning" id="rdb-warning" name="rd-group"><label for="rdb-warning">Warning</label>
-                                <input type="radio" class="rdbtn rdbtn-danger" id="rdb-danger" name="rd-group"><label for="rdb-danger">Danger</label>
-                                <input type="radio" class="rdbtn rdbtn-notice" id="rdb-notice" name="rd-group"><label for="rdb-notice">Notice</label>-->
-
-
-
+                                </label>-->
+                                <input type="radio" class="rdbtn rdbtn-primary radiolbl" id="rdb-primary" value='1' name="rad_Child"><label for="rdb-primary">มี</label>
+                                <input type="radio" class="rdbtn rdbtn-primary radiolbl" id="rdb-success" value='2' name="rad_Child" checked><label for="rdb-success">ไม่มี</label>
                             </div>
                         </div>
-                        <!--<div class="">
-
-                            <label id="lblAgr" class="FinanCalLabel">อายุปัจจุบัน</label>
-                            <div class="squarebrackets">
-                                <input type="text" id="txt_hl_Age_Now" class="cssInput  " style="width:170px;font-size:24px;text-align:center;" value="20" maxlength="3">
-                            </div>
-                        </div>-->
-                        <!--<div class="">
-
-                            <label id="lblStartWork" class="FinanCalLabel">อายุตอนเริ่มทำงาน</label>
-                            <div class="squarebrackets">
-                                <input type="text" id="txt_hl_Age_Start" class="cssInput" style="width:170px;font-size:24px;text-align:center;" value="20" maxlength="3">
-                            </div>
-                        </div>-->
-                        <!--<div class="">
-                            <div class="col-md-4 col-md-offset-4 col-sm-4  col-sm-offset-4 col-xs-4  col-xs-offset-4 borderDashed" style="margin-top:20px;">
-                            </div>
-                        </div>-->
                     </div>
                 </div>
             </div>
 
-            <hr />
-
             <div id="divHealthy_Input_2" class="row" style="display:block">
                 <h1 class="text-center">  <a href="#step-1" type="button" class="btn btn-primary btn-circle">2</a> ข้อมูลทางการเงิน    </h1>
-                <!--<div class="col-md-6 text-left FinanCalLinkText" onClick="changeSubMenu(1);">
-                    <img src="Image/icon/left-arrow.svg" class="iconNext " /> 1. ข้อมูลส่วนบุคคล
-                </div>
-                <div class="col-md-6 text-right FinanCalLinkText" onClick="changeSubMenu(3);">
-                    3.
-
-                    สรุป           <img src="Image/icon/right-arrow.svg" class="iconNext" />
-                </div>-->
 
                 <div class="col-md-12">
 
                     <div class="text-center col-md-offset-3 col-md-6">
-                        <!--<div class="col-md-5 text-right "><label class="FinanCalLabel">รายได้ต่อเดือน</label></div>
-                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_income" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>-->
 
                         <div class="group">
                             <input type="text" id="txt_hl_income" value="0" maxlength="11" required>
@@ -255,26 +194,7 @@
                             <!--<span class="bar"></span>-->
                             <label>หนี้สินรวม</label>
                         </div>
-
-                        <!--<div class="col-md-5 text-right "><label class="FinanCalLabel">หนี้สินรวม</label></div>
-                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_debit" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>-->
                     </div>
-                    <!--<div class="row">
-                       <div class="col-md-5 text-right  "><label class="FinanCalLabel">รายจ่ายต่อเดือน</label></div>
-                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_expenses" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
-                    </div>-->
-                    <!--<div class="row">
-                        <div class="col-md-5 text-right  "><label class="FinanCalLabel">ยอดผ่อนชำระหนี้บ้านต่อเดือน</label></div>
-                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_mortgage" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
-                    </div>-->
-                    <!--<div class="row">
-                        <div class="col-md-5 text-right "><label class="FinanCalLabel">ยอดผ่อนชำระหนี้รถต่อเดือน</label></div>
-                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_car" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div>
-                    </div>-->
-                    <!--<div class="row">
-                        <div class="col-md-5 text-right "><label class="FinanCalLabel">เงินออมต่อเดือน</label></div>
-                        <div class="col-md-7 squarebrackets"><input type="text" id="txt_hl_saving" class="cssInput" style="width:220px;font-size:24px;text-align:center;" value="0" maxlength="11"></div><label class="FinanCalLabel" style="display:inline-block"> </label>
-                    </div>-->
                 </div>
             </div>
 
@@ -299,7 +219,9 @@
                         <label class="lblChart">รายได้ต่อเดือน</label>
                     </div>
 
-                    <div><label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน 6-12 เท่าของรายจ่ายต่อเดือน (กรณีมีบุตร)</label></div>
+                    <div class="col-md-12 text-center"><label class="sText textlight lblRangChart "> * เกณฑ์มาตรฐาน 6-12 เท่าของรายจ่ายต่อเดือน (กรณีมีบุตร)  </label></div>
+
+                    <div><label class="sText textlight lblRangChart">  </label></div>
                 </div>
 
                 <div class="col-md-8  col-md-offset-2 col-sm-12 col-xs-12">
@@ -332,26 +254,18 @@
                 </div>
             </div>
 
-            <hr />
-
             <div id="divHealthy_Output_2" class="col-md-12  col-sm-12 col-xs-12">
                 <div class="col-md-12  text-center"><h2>2. คุณมีหนี้สินมากเกินไปหรือไม่?</h2></div>
-                <!--<img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />-->
+
                 <div class="col-md-12 col-sm-12 col-xs-12 center-block" style="position:relative;">
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_2.png" class="center-block" />
-                        <label class="lblChart center-block">สินทรัพย์รวม</label>
+                        <label class="lblChart ">สินทรัพย์รวม</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
-                    <!--<div style="background-color:firebrick;margin-left:auto;margin-right:auto;">-->
-                    <!--<div id='healthy_bg_3_1_graph_1' class="classGraph" style="position:relative;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
-                    <div id='healthy_bg_3_1_graph_2' class="classGraph" style="position:relative ;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>-->
-                    <!--</div>-->
-                    <!--<div id="divLine" style="width:90px;height:40px;position:absolute;top:200px; background-image:url(/PublishingImages/Tax/line.png)"></div>-->
-
-                    <div style=""><label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน คือ หนี้สินไม่ควรเกิน 50% ของสินทรัพย์รวม</label></div>
+                    <div class="col-md-12 text-center"><label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน คือ หนี้สินไม่ควรเกิน 50% ของสินทรัพย์รวม</label></div>
                 </div>
 
                 <div class="col-md-8  col-md-offset-2 col-sm-12 col-xs-12">
@@ -377,32 +291,22 @@
                         <div class="col-md-12"><label id="lblmsg" class="lblBBL mText "> </label> </div>
                         <div class="col-md-12"><label id="lbladvice" class="lblBBL mText"> </label> </div>
                     </div>
-                    <!--<div class="text-right">  <input type="text" id="txt_Result_Value" class="cssOutput" style="font-size:auto; " value="10,000" disabled="disabled"> </div>-->
                 </div>
             </div>
 
-            <hr />
-
             <div id="divHealthy_Output_3" class="col-md-12  col-sm-12 col-xs-12">
                 <div class="col-md-12  text-center"><h2>3. คุณมีภารในการผ่อนชำระหนี้สินทั้งหมดต่อเดือนสูงเกินไปหรือไม่?</h2></div>
-                <!--<img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />-->
+
                 <div class="col-md-12 col-sm-12 col-xs-12 " style="position:relative;">
 
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_3.png" class="center-block" />
-                        <label class="lblChart center-block">รายได้ต่อเดือน</label>
+                        <label class="lblChart ">รายได้ต่อเดือน</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
-                    <!--<img src="Image/bar/healthy_bg_3_3.png" class="center-block" />-->
-                    <!--<div style="background-color:firebrick;margin-left:auto;margin-right:auto;">-->
-                    <!--<div id='healthy_bg_3_1_graph_1' class="classGraph" style="position:relative;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
-                    <div id='healthy_bg_3_1_graph_2' class="classGraph" style="position:relative ;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>-->
-                    <!--</div>-->
-                    <!--<div id="divLine" style="width:90px;height:40px;position:absolute;top:200px; background-image:url(/PublishingImages/Tax/line.png)"></div>-->
-                    <!--<div id="divLine" class="Line"></div>-->
-                    <div style=""><label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน คือ ผ่อนหนี้ไม่ครวเกิน 40% ของรายได้ต่อเดือน</label></div>
+                    <div class="col-md-12 text-center"><label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน คือ ผ่อนหนี้ไม่ครวเกิน 40% ของรายได้ต่อเดือน</label></div>
                 </div>
                 <div class="col-md-8  col-md-offset-2 col-sm-12 col-xs-12">
 
@@ -411,7 +315,7 @@
                             <label class="lblBBL">ผลลัพธ์คือ</label>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                            <!--<input type="text" id="txt_hl_Result_2" class="cssOutput" style="width:100%;text-align:center;vertical-align:middle;" value="0" maxlength="3" disabled="disabled">-->
+
                             <div style="width:100%;  background-color : rgba(160, 160, 160, .1)">
                                 <input type="text" id="txt_hl_Result_3" class="lblInput lText textHighlight" style="background-color:transparent;border:none;width:100%;text-align:center;vertical-align:middle;" value="0" maxlength="3" disabled="disabled">
                             </div>
@@ -427,30 +331,22 @@
                         <div class="col-md-12"><label id="lblmsg" class="lblBBL mText "> </label> </div>
                         <div class="col-md-12"><label id="lbladvice" class="lblBBL mText"> </label> </div>
                     </div>
-                    <!--<div class="text-right">  <input type="text" id="txt_Result_Value" class="cssOutput" style="font-size:auto; " value="10,000" disabled="disabled"> </div>-->
                 </div>
             </div>
 
             <div id="divHealthy_Output_4" class="col-md-12  col-sm-12 col-xs-12">
                 <div class="col-md-12  text-center"><h2>4. คุณมีภารในการผ่อนชำระหนี้สินที่ไม่ใช่การจดจำนองต่อเดือนสูงเกินไปหรือไม่?</h2></div>
-                <!--<img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />-->
+
                 <div class="col-md-12 col-sm-12 col-xs-12 " style="position:relative;">
 
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_4.png" class="center-block" />
-                        <label class="lblChart center-block">รายได้ต่อเดือน</label>
+                        <label class="lblChart ">รายได้ต่อเดือน</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
-                    <!--<img src="Image/bar/healthy_bg_3_4.png" class="center-block" />-->
-                    <!--<div style="background-color:firebrick;margin-left:auto;margin-right:auto;">-->
-                    <!--<div id='healthy_bg_3_1_graph_1' class="classGraph" style="position:relative;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
-                    <div id='healthy_bg_3_1_graph_2' class="classGraph" style="position:relative ;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>-->
-                    <!--</div>-->
-                    <!--<div id="divLine" style="width:90px;height:40px;position:absolute;top:200px; background-image:url(/PublishingImages/Tax/line.png)"></div>-->
-                    <!--<div id="divLine" class="Line"></div>-->
-                    <div><label label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน คือ ผ่อนหนี้ไม่จดจำนองไม่ครวเกิน 15% ของรายได้ต่อเดือน</label></div>
+                    <div class="col-md-12 text-center"><label label class="sText textlight lblRangChart">   * เกณฑ์มาตรฐาน คือ ผ่อนหนี้ไม่จดจำนองไม่ครวเกิน 15% ของรายได้ต่อเดือน</label></div>
                 </div>
 
                 <div class="col-md-8  col-md-offset-2 col-sm-12 col-xs-12">
@@ -467,7 +363,6 @@
                         </div>
 
                         <div class="col-md-12 text-right">
-                            <!--<label>เท่าของร่ายจ่ายต่อเดือน*</label>-->
                         </div>
                     </div>
                     <div class="col-md-12 divAdvice text-left">
@@ -475,30 +370,22 @@
                         <div class="col-md-12"><label id="lblmsg" class="lblBBL mText "> </label> </div>
                         <div class="col-md-12"><label id="lbladvice" class="lblBBL mText"> </label> </div>
                     </div>
-                    <!--<div class="text-right">  <input type="text" id="txt_Result_Value" class="cssOutput" style="font-size:auto; " value="10,000" disabled="disabled"> </div>-->
                 </div>
             </div>
 
             <div id="divHealthy_Output_5" class="col-md-12 col-sm-12 col-xs-12">
                 <div class="col-md-12 text-center"><h2>5. ทุกวันนี้คุณออมเงินในสัดส่วนที่เหมาะสมหรือไม่?</h2></div>
-                <!--<img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1.png" usemap="#Map1" style="background-size:contain;position: relative;height:400px;width:990px;" />-->
+
                 <div class="col-md-12 col-sm-12 col-xs-12 " style="position:relative;">
 
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_5.png" class="center-block" />
-                        <label class="lblChart center-block">รายได้ต่อเดือน</label>
+                        <label class="lblChart">รายได้ต่อเดือน</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
-                    <!--<img src="Image/bar/healthy_bg_3_5.png" class="center-block" />-->
-                    <!--<div style="background-color:firebrick;margin-left:auto;margin-right:auto;">-->
-                    <!--<div id='healthy_bg_3_1_graph_1' class="classGraph" style="position:relative;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_1.png" /></div>
-                    <div id='healthy_bg_3_1_graph_2' class="classGraph" style="position:relative ;display:none"><img src="/PublishingImages/Tax/Thai/bg_title/healthy_bg_3_1_graph_2.png" /></div>-->
-                    <!--</div>-->
-                    <!--<div id="divLine" style="width:90px;height:40px;position:absolute;top:200px; background-image:url(/PublishingImages/Tax/line.png)"></div>-->
-                    <!--<div id="divLine" class="Line"></div>-->
-                    <div><label label class="sText textlight lblRangChart">  * เกณฑ์มาตรฐาน คือ ออมอย่างน้อย 10% ของรายได้ต่อเดือน</label></div>
+                    <div class="col-md-12 text-center"><label label class="sText textlight lblRangChart">  * เกณฑ์มาตรฐาน คือ ออมอย่างน้อย 10% ของรายได้ต่อเดือน</label></div>
                 </div>
 
                 <div class="col-md-8  col-md-offset-2 col-sm-12 col-xs-12">
@@ -523,7 +410,6 @@
                         <div class="col-md-12"><label id="lblmsg" class="lblBBL mText "> </label> </div>
                         <div class="col-md-12"><label id="lbladvice" class="lblBBL mText"> </label> </div>
                     </div>
-                    <!--<div class="text-right">  <input type="text" id="txt_Result_Value" class="cssOutput" style="font-size:auto; " value="10,000" disabled="disabled"> </div>-->
                 </div>
             </div>
 
@@ -534,36 +420,23 @@
 
                     <div style="position:relative;" class="col-md-12   text-center">
                         <div class="col-md-12 text-left">
-                            <!--<label>ผลลัพธ์คือ</label>-->
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                             <div style="width:100%;  background-color : rgba(160, 160, 160, .1)">
                                 <input type="text" id="txt_hl_Result_6" class="lblInput lText textHighlight" style="background-color:transparent;border:none;width:100%;text-align:center;vertical-align:middle;" value="0" maxlength="3" disabled="disabled">
-                          
- 
-                                <div style="background-color:transparent;" class="col-md-12 text-right">
-                            <label> บาท* </label>
+
+                                <div>
+                                    <label class="lblBBL" style="text-align:right;padding-bottom:5px;padding-right:5px"> บาท* </label>
+                                </div>
+                            </div>
                         </div>
 
-                          
-                           
-                    
-                            
-                              </div>
-                            <!--<div id="divEmo" style=""></div>-->
-                               
+                        <div class="col-md-12 divAdvice text-left">
+
+                            <div class="col-md-12"><label id="lblmsg" class="lblBBL mText "> </label> </div>
+                            <div class="col-md-12"><label id="lbladvice" class="lblBBL mText">  *สินทรัพย์อาจอยู่ในรูปแบบของ เงินสด กองทุนรวม หุ้นหรือมูลค่าของสินทรัพย์ ที่ผ่อนชำระแล้ว ณ ราคาตลาด เช่น ซื้อรถมูลค่า 1 ล้านบาท ผ่อนไปแล้ว 7 แสนบาท (70%) ราคาตลาดเท่ากับ 800,000 บาท ดังนั้นมูลค่าสินทรัพย์ที่ผ่านการชำระแล้ว ณ ราคาตลาดเท่ากับ 560,000 (800,000 * 70%) </label> </div>
                         </div>
-
-                     
                     </div>
-
-                    <div class="col-md-12 divAdvice text-left">
-
-                        <div class="col-md-12"><label id="lblmsg" class="lblBBL mText "> </label> </div>
-                        <div class="col-md-12"><label id="lbladvice" class="lblBBL mText">  *สินทรัพย์อาจอยู่ในรูปแบบของ เงินสด กองทุนรวม หุ้นหรือมูลค่าของสินทรัพย์ ที่ผ่อนชำระแล้ว ณ ราคาตลาด เช่น ซื้อรถมูลค่า 1 ล้านบาท ผ่อนไปแล้ว 7 แสนบาท (70%) ราคาตลาดเท่ากับ 800,000 บาท ดังนั้นมูลค่าสินทรัพย์ที่ผ่านการชำระแล้ว ณ ราคาตลาดเท่ากับ 560,000 (800,000 * 70%) </label> </div>
-                    </div>
-
-                    <!--<div class="text-right">  <input type="text" id="txt_Result_Value" class="cssOutput" style="font-size:auto; " value="10,000" disabled="disabled"> </div>-->
                 </div>
             </div>
         </div>

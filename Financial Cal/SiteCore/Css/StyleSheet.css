@@ -23,21 +23,27 @@
 
 /*Section==*/
 section {
-padding-top:30px;
-}
-section.blue {
-    background-color: #25395a;
-    color: #fff;
-    font-size:16px;
-}
-section.blue  {
-   
-    color: #fff;
+    padding-top: 30px;
 }
 
+    section.blue {
+        background-color: #25395a;
+        color: #CCCCCC;
+        font-size: 16px;
+    }
+
+    section.blue {
+        color: #CCCCCC;
+    }
+
 .cssInput {
-background-color:transparent;
- 
+    background-color: transparent;
+}
+
+section input[type="radio"].rdbtn + label {
+    color: #c8c8c8;
+    display: inline;
+    font-size: 18px !important;
 }
 
 /*==Section*/
@@ -66,7 +72,7 @@ label.btn span {
 label input[type="radio"] ~ i.fa.fa-circle-o {
     color: #999;
     display: inline;
-     font-size: 18px;
+    font-size: 18px;
 }
 
 label input[type="radio"] ~ i.fa.fa-dot-circle-o {
@@ -80,8 +86,7 @@ label input[type="radio"]:checked ~ i.fa.fa-circle-o {
 label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o {
     color: #7AA3CC;
     display: inline;
-
-       font-size: 18px;
+    font-size: 18px;
 }
 
 label:hover input[type="radio"] ~ i.fa {
@@ -230,22 +235,33 @@ div[data-toggle="buttons"] label {
 
 /**/
 .lblChart {
-
     margin-top: -25px;
-    color:#c8c8c8;
-    font-size:.8em;
-    text-align:center;
+    color: #c8c8c8;
+    font-size: .8em;
+    text-align: center;
 }
 
-.lblRangChart{
-    bottom: -9px;width: 388px !important;position: absolute;width: 100%;right: 102px;
+.lblRangChart {
 
+    margin-top:13px;
+    margin-bottom:3px;
+ 
+    /*bottom: -9px;
+    width: 516px !important;
+    position: absolute;
+    width: 100%;
+    right: -23px;*/
+
+
+    /*bottom: -9px;
+    width: 388px !important;
+    position: absolute;
+    width: 100%;
+    right: 102px;*/
 }
 
-
-.divAdvice{
+.divAdvice {
     /*margin-top: 25%;
     margin-bottom: 20px;*/
- margin-top:25px;
-
+    margin-top: 25px;
 }
