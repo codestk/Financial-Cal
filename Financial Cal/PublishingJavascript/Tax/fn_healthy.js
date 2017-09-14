@@ -4,7 +4,9 @@
 //###############################################################
 //###############################################################
 var idChartOld = 0;
+//var $Healthy = jQuery.noConflict();
 var $Healthy = jQuery.noConflict();
+var jQuery = jQuery.noConflict();
 var Global_strID_Hide = 1;
 var varRad_Child = 0;
 var var_Check_Result;
