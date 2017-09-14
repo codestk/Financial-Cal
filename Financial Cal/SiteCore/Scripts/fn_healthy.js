@@ -10,6 +10,31 @@ var varRad_Child = 0;
 var var_Check_Result;
 
 $Healthy(document).ready(function (e) {
+    $Calculator('#divHealthyMiddleMenu a').click(function () {
+        $Calculator('#divHealthyMiddleMenu a').removeClass('Active');
+        $Calculator(this).addClass('Active');
+        if (this.id == 'MenuDivHealthy_Input_1')
+        {
+            
+            $Calculator('#divHealthy_Input_1').show();
+            $Calculator('#divHealthy_Input_2').hide();
+            $Calculator('#divHealthy_OutPut').hide();
+        }
+        if (this.id == 'MenuDivHealthy_Input_2')
+        {  
+            $Calculator('#divHealthy_Input_1').hide();
+            $Calculator('#divHealthy_Input_2').show();
+            $Calculator('#divHealthy_OutPut').hide();
+        }
+        if (this.id == 'MenuDivHealthy_Input_3')
+        {
+                 
+            $Calculator('#divHealthy_Input_1').hide();
+            $Calculator('#divHealthy_Input_2').hide();
+            $Calculator('#divHealthy_OutPut').show();
+        }
+    });
+
     $Calculator('#divButtonDisc').fadeIn('slow');
     //$Calculator('#divButtonDisc').offset().top;
     $Calculator('#divButtonDisc').hover(function () {
@@ -245,7 +270,7 @@ function calHealthy() {
         } else if (!$Healthy.isNumeric(var_Result_2)) {
             var_Result_2 = 999;
         }
-         
+
         gen_HL_Graph(var_Result_2, '2', 50);
         //----------------------------------------------------------------------------------
 
@@ -273,10 +298,6 @@ function calHealthy() {
         }
 
         gen_HL_Graph(var_Result_4, '4', 15);
-
-
-
-         
 
         var var_Result_5 = ((parseInt(hl_saving) / parseInt(hl_income)) * 100).toFixed(2);
         //if (isNaN(var_Result_5)) {
@@ -315,7 +336,6 @@ function gen_HL_Graph(varPercent, varID, varBase) {
         varPercent = 0;
     }
 
-       
     //pos_Line = 290 - ((varPercent / 100) * 211);
     if (varPercent == 0) {
         pos_Line = 204;
@@ -328,8 +348,6 @@ function gen_HL_Graph(varPercent, varID, varBase) {
     //$Healthy('#divHealthy_Output_' + varID + ' #divEmo').css('top', '55px');
     $Healthy('#divHealthy_Output_' + varID + ' #divEmo').removeClass('iconCenter');
     $Healthy('#divHealthy_Output_' + varID + ' #divEmo').addClass('iconCorner');
- 
-   
 
     if (varPercent < varBase) {
         if (varID == 5) {
@@ -377,16 +395,15 @@ function gen_HL_Graph(varPercent, varID, varBase) {
         }
     }
     //$Healthy('#divHealthy_Output_' + varID + ' #divResultContent').css('background-image', 'url(/PublishingImages/Tax/Thai/bg_title/result' + varID + '/content' + var_Selected_1 + '.png)');
-   
+
     //    var arr = [[],[]];
     //arr[0][2] = 'Hi Mr.A';
     //arr[1][3] = 'Hi Mr.B';
     //alert(arr[0][2]);
     //alert(arr[1][3]);
-     
- 
-    var arr = [[],[],[],[],[],[]];   
-  
+
+    var arr = [[], [], [], [], [], []];
+
     arr[1][1] = 'คุณมีหนี้สินอยู่ในระดับมาตรฐาน และมีความสามารถในการชำระหนี้เป็นอย่างดี';
     arr[1][2] = 'คุณมีหนี้สินอยู่ในระดับมาตรฐาน และมีความสามารถในการชำระหนี้เป็นอย่างดี';
     arr[1][3] = 'คุณมีโอกาสที่จะผิดนัดชำระหนี้ได้ เพราะมีหนี้สินค่อนข้างสูงเมื่อเทียบกับสินทรัพย์ที่มีอยู่ แนะนำให้ชำระหนี้อย่างสม่ำเสมอและไม่ควรก่อหนี้เพิ่มเติม';
@@ -411,8 +428,8 @@ function gen_HL_Graph(varPercent, varID, varBase) {
     arr[5][2] = 'คุณมีสัดส่วนการออมที่เหมาะสม มีโอกาสสูงที่จะบรรลุเป้าหมายทางการเงินได้ตามระยะเวลาที่กำหนดไว้ ทั้งนี้สัดส่วนดังกล่าวผันแปรตาม อายุที่เพิ่ม และเป้าหมายทางการเงินที่มีมากขึ้นด้วย';
     arr[5][3] = 'คุณมีสัดส่วนการออมที่เหมาะสม มีโอกาสสูงที่จะบรรลุเป้าหมายทางการเงินได้ตามระยะเวลาที่กำหนดไว้ ทั้งนี้สัดส่วนดังกล่าวผันแปรตาม อายุที่เพิ่ม และเป้าหมายทางการเงินที่มีมากขึ้นด้วย';
     arr[5][4] = '';
-     
-    if ((var_Selected_1 != undefined)&& ((varID==2)||(varID==3)||(varID==4) || (varID=5))) {
+
+    if ((var_Selected_1 != undefined) && ((varID == 2) || (varID == 3) || (varID == 4) || (varID = 5))) {
         $Healthy('#divHealthy_Output_' + varID + ' #lblmsg').text(arr[varID][var_Selected_1]);
         $Healthy('#txt_hl_Result_' + varID + '').val(parseFloat(varPercent) + ' %');
     }
@@ -560,7 +577,6 @@ function checkKeyboard() {
 
         temp_Income = $Healthy(this).val().replace(/,/g, '');
 
-      
         $Healthy(this).val(temp_Income);
         //console.log(	$Healthy(this).val());
     });

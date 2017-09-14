@@ -24,6 +24,7 @@
 /*Section==*/
 section {
     padding-top: 30px;
+    padding-bottom:30px;
 }
 
     section.blue {
@@ -33,7 +34,7 @@ section {
     }
 
     section.blue {
-        color: #CCCCCC;
+        color: #fff;
     }
 
 .cssInput {
