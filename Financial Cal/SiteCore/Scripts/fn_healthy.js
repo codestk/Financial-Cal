@@ -560,7 +560,7 @@ function checkKeyboard() {
 
         temp_Income = $Healthy(this).val().replace(/,/g, '');
 
-        console.log(temp_Income);
+      
         $Healthy(this).val(temp_Income);
         //console.log(	$Healthy(this).val());
     });

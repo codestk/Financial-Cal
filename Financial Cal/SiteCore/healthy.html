@@ -28,9 +28,73 @@
 
     <!--Bootstap Extend-->
     <link href="Modules/bootstrap-extend/css/bootstrap-extend.css" rel="stylesheet" />
-    <script src="Modules/bootstrap-extend/js/bootstrap-extend.js"></script>
+    <!--<script src="Modules/bootstrap-extend/js/bootstrap-extend.js"></script>-->
+    <link href="Modules/Swiper/dist/css/swiper.min.css" rel="stylesheet" />
+    <script src="Modules/Swiper/dist/js/swiper.min.js"></script>
+   
+    
+    
+    
+    <style>
+         .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    </style>
+     <script>
+
+
+              var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });    
+
+
+
+    </script>
+
 </head>
 <body>
+
+
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
 
     <!--<div class="container">
         <div class="btn-group btn-group-justified btn-group-lg">
@@ -40,7 +104,7 @@
         </div>
     </div>-->
     <section class="blue FinanCalBaseText">
-
+            
         <!--<div class="holder container center-block">
             <ul class="SteppedProgress">
                 <li class="complete">
@@ -63,22 +127,18 @@
 
         <div class="container">
 
-   
-
-
-
             <!--<div class="btn-group btn-group-justified" role="group" aria-label="...">-->
 
-   <div class="btn-group btn-group-justified btn-group-lg bbl-Middle-Menu">
-            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-flip-vertical fa-fw fa-star"></i>ข้อมูลส่วนบุคคล
-</a>
-            <a href="#" class="btn btn-default"><i class="fa fa-fw fa-th-list"></i>ข้อมูลทางการเงิน
-</a>
-            <a href="#" class="btn btn-default"><i class="fa fa-fw fa-paypal"></i> วิเคราะห์สุขภาพทางการเงิน</a>
-        </div>
+            <div class="btn-group btn-group-justified btn-group-lg bbl-Middle-Menu">
+                <a href="#" class="btn btn-default  ">
+                    ข้อมูลส่วนบุคคล
+                </a>
+                <a href="#" class="btn btn-default">
+                    ข้อมูลทางการเงิน
+                </a>
+                <a href="#" class="btn btn-default">  วิเคราะห์สุขภาพทางการเงิน</a>
+            </div>
 
-
-          
             <div id="divHealthy_Input_1" class="row" style="display:block">
                 <h1 class="text-center"><a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> ข้อมูลส่วนบุคคล</h1>
 
@@ -179,7 +239,7 @@
                             <input type="text" id="txt_hl_asset" value="0" maxlength="11" required>
                             <span class="highlight"></span>
                             <!--<span class="bar"></span>-->
-                            <label>สินทรัพย์รวม</label>
+                            <label>&nbsp;&nbsp;สินทรัพย์รวม</label>
                         </div>
                         <div class="group">
                             <input type="text" id="txt_hl_quick_assets" value="0" maxlength="11" required>
@@ -192,7 +252,7 @@
                             <input type="text" id="txt_hl_debit" value="0" maxlength="11" required>
                             <span class="highlight"></span>
                             <!--<span class="bar"></span>-->
-                            <label>หนี้สินรวม</label>
+                            <label>&nbsp;&nbsp;หนี้สินรวม</label>
                         </div>
                     </div>
                 </div>
@@ -216,7 +276,7 @@
 
                         <div id="divLine" class="Line center-block"></div>
 
-                        <label class="lblChart">รายได้ต่อเดือน</label>
+                        <label class="lblChart">&nbsp;&nbsp;รายได้ต่อเดือน</label>
                     </div>
 
                     <div class="col-md-12 text-center"><label class="sText textlight lblRangChart "> * เกณฑ์มาตรฐาน 6-12 เท่าของรายจ่ายต่อเดือน (กรณีมีบุตร)  </label></div>
@@ -261,7 +321,7 @@
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_2.png" class="center-block" />
-                        <label class="lblChart ">สินทรัพย์รวม</label>
+                        <label class="lblChart ">&nbsp;&nbsp;สินทรัพย์รวม</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
@@ -302,7 +362,7 @@
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_3.png" class="center-block" />
-                        <label class="lblChart ">รายได้ต่อเดือน</label>
+                        <label class="lblChart ">&nbsp;&nbsp;รายได้ต่อเดือน</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
@@ -342,7 +402,7 @@
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_4.png" class="center-block" />
-                        <label class="lblChart ">รายได้ต่อเดือน</label>
+                        <label class="lblChart ">&nbsp;&nbsp;รายได้ต่อเดือน</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 
@@ -381,7 +441,7 @@
                     <div class="center-block" style="width:147px">
 
                         <img src="Image/bar/healthy_bg_3_5.png" class="center-block" />
-                        <label class="lblChart">รายได้ต่อเดือน</label>
+                        <label class="lblChart">&nbsp;&nbsp;รายได้ต่อเดือน</label>
                         <div id="divLine" class="Line center-block"></div>
                     </div>
 

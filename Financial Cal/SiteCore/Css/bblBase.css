@@ -1,9 +1,32 @@
-﻿.bbl-Middle-Menu {
+﻿.bbl-Middle-Menu > a.btn-default {
+    background-color: transparent !important;
+    height: 110px;
     color: #ccc;
-    /* background-color: #fff; */
+    font-weight: bold;
     border-color: #ccc;
-    background-color:red !important;
+    border: 1px solid #556a87;
+
+    white-space:  unset !important;
+    
 }
+
+.bbl-Middle-Menu a:first-child {
+    /*border-top-left-radius:25px;
+    border-bottom-left-radius:25px;*/
+    border-radius: 25px 0px 0px 25px;
+    -moz-border-radius: 25px 0px 0px 25px;
+    -webkit-border-radius: 25px 0px 0px 25px;
+}
+
+ 
+
+.bbl-Middle-Menu a:last-child {
+ border-radius: 0px 25px 25px 0px;
+-moz-border-radius: 0px 25px 25px 0px;
+-webkit-border-radius: 0px 25px 25px 0px;
+}
+
+/*Button*/
 
 .btnbbl {
     background-color: #003399;
@@ -69,7 +92,7 @@
 /*Text Box*/
 .group {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: block;
 }
 
@@ -87,6 +110,7 @@
         color: #ccc;
         width: 100%;
         padding-right: 45px;
+        border: 1px solid #556a87;
     }
 
         .group input:focus {
@@ -103,7 +127,8 @@
         pointer-events: none;
         left: 30px;
         top: 18px;
-        /*transition: 0.2s ease all;
+    
+    /*transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;*/
     }
