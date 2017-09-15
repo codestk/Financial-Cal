@@ -5,9 +5,7 @@
     font-weight: bold;
     border-color: #ccc;
     border: 1px solid #556a87;
-
-    white-space:  unset !important;
-    
+    white-space: unset !important;
 }
 
 .bbl-Middle-Menu a:first-child {
@@ -18,18 +16,15 @@
     -webkit-border-radius: 25px 0px 0px 25px;
 }
 
-.bbl-Middle-Menu a.Active{
-    background-color:#556a87 !important;
-    color:#fff !important;
-
+.bbl-Middle-Menu a.Active {
+    background-color: #556a87 !important;
+    color: #fff !important;
 }
 
- 
-
 .bbl-Middle-Menu a:last-child {
- border-radius: 0px 25px 25px 0px;
--moz-border-radius: 0px 25px 25px 0px;
--webkit-border-radius: 0px 25px 25px 0px;
+    border-radius: 0px 25px 25px 0px;
+    -moz-border-radius: 0px 25px 25px 0px;
+    -webkit-border-radius: 0px 25px 25px 0px;
 }
 
 /*Button*/
@@ -102,21 +97,38 @@
     display: block;
 }
 
+.group {
+    font-size: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    /*width: 300px;*/
+    border: solid;
+    border-color: #435875;
+    /*border-bottom: 1px solid #757575;*/
+    text-align: right;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #ccc;
+    width: 100%;
+    padding-right: 45px;
+    border: 1px solid #556a87;
+    /*fix valing */
+    display: flex;
+    align-items: center;
+ min-height:77px;
+}
+
     .group input {
-        font-size: 25px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        /*width: 300px;*/
-        border: solid;
-        border-color: #435875;
-        /*border-bottom: 1px solid #757575;*/
         text-align: right;
         background-color: transparent;
-        border-radius: 50px;
-        color: #ccc;
-        width: 100%;
-        padding-right: 45px;
-        border: 1px solid #556a87;
+        border: none;
+        margin-top: auto;
+        margin-bottom: auto;
+       
+        padding: 0px;
+         
+              display: block;
+    width: 100%;
     }
 
         .group input:focus {
@@ -126,17 +138,21 @@
 
     /* LABEL ======================================= */
     .group label {
-        color: #999;
+        /*color: #999;
         font-size: 18px;
         font-weight: normal;
-        position: absolute;
+
         pointer-events: none;
-        left: 30px;
-        top: 18px;
-    
-    /*transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;*/
+          margin-top:auto;
+         margin-bottom:auto;
+         height:100%;*/
+        font-size: 18px;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left:30px;
     }
 
     /* active state */
