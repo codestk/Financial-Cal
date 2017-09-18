@@ -13,6 +13,10 @@ $Healthy(document).ready(function (e) {
     $Calculator('#divHealthyMiddleMenu a').click(function () {
         $Calculator('#divHealthyMiddleMenu a').removeClass('Active');
         $Calculator(this).addClass('Active');
+
+       
+    
+
         if (this.id == 'MenuDivHealthy_Input_1')
         {
             
@@ -70,6 +74,17 @@ $Healthy(document).ready(function (e) {
     });
 
     resetTextbox();
+
+    //innit MenuDivHealthy_Input_1
+    
+    $Healthy("#MenuDivHealthy_Input_1").click();
+
+    //select List
+     $Healthy('select').niceSelect();
+      //$Healthy('select:not(.ignore)').niceSelect();      
+      FastClick.attach(document.body);
+
+
 });
 
 //##################### เช็ค Min-Max #####################

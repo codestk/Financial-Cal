@@ -29,13 +29,16 @@
     <link href="Css/iCons.css" rel="stylesheet" />
 
     <!--Step-->
-    <link href="Css/ProgressIndicator.css" rel="stylesheet" />
-
+    <!--<link href="Css/ProgressIndicator.css" rel="stylesheet" />-->
     <!--Bootstap Extend-->
-   <link href="Modules/bootstrap-extend/css/bootstrap-extend.css" rel="stylesheet" />
- 
-  <!--<script src="Modules/bootstrap-extend/js/bootstrap-extend.js"></script>--> 
-    
+    <link href="Modules/bootstrap-extend/css/bootstrap-extend.css" rel="stylesheet" />
+
+    <!--Select Box-->
+    <!--<link href="Modules/jquery-nice-select/css/style.css" rel="stylesheet" />-->
+    <link href="Modules/jquery-nice-select/css/nice-select.css" rel="stylesheet" />
+    <script src="Modules/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="Modules/jquery-nice-select/js/prism.js"></script>
+    <script src="Modules/jquery-nice-select/js/fastclick.js"></script>
 </head>
 <body>
 
@@ -54,7 +57,7 @@
             </div>
 
             <div id="divHealthy_Input_1" class="row" style="display:block">
-                <h1 class="text-center"><a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> ข้อมูลส่วนบุคคล</h1>
+                <h1 class="text-center"><!--<a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>--> ข้อมูลส่วนบุคคล</h1>
 
                 <div class="col-md-12">
 
@@ -64,51 +67,37 @@
                         <div class="group">
                             <div class="col-md-6 col-sm-6 col-xs-6  text-left">
                                 <label>อายุปัจจุบัน</label>
-                                </div>
+                            </div>
                             <div class="col-md-6 col-sm-6 col-xs-6 text-right">
                                 <input type="text" id="txt_hl_Age_Now" value="20" maxlength="3" required>
                             </div>
-                                    <!--<span class="highlight"></span>-->
-                                <!--<span class="bar"></span>-->
-
-                            </div>
+                            <!--<span class="highlight"></span>-->
+                            <!--<span class="bar"></span>-->
+                        </div>
 
                         <div class="group">
                             <div class="col-md-6 col-sm-6 col-xs-6  text-left">
                                 <label>อายุตอนเริ่มทำงาน</label>
-                                </div>
+                            </div>
                             <div class="col-md-6 col-sm-6 col-xs-6 text-right">
                                 <input type="text" id="txt_hl_Age_Start" value="20" maxlength="3" required>
-                               </diV>
-                                 <!--<span class="highlight"></span>-->
-                                <!--<span class="bar"></span>-->
-
                             </div>
+                            <!--<span class="highlight"></span>-->
+                            <!--<span class="bar"></span>-->
+                        </div>
 
                         <div>
                             <h2>การมีบุตร</h2>
 
-                            <!--<div class="btn-group  " data-toggle="buttons">
-                            <label class="btn ">
-                                    <input type='radio' id='rad_Child' name='rad_Child' value='1'><i class="fa fa-circle-o fa-2x">  มี  </i><i class="fa fa-dot-circle-o fa-2x"> มี</i>
-                                </label>
-                                <label class="btn active">
-                                    <input type='radio' id='rad_Child' name='rad_Child' value='2' checked><i class="fa fa-circle-o fa-2x"> ไม่มี </i><i class="fa fa-dot-circle-o fa-2x"> ไม่มี</i>
-                                </label> 
-                              
-                            </div>-->
-
-                           <input type="radio" class="rdbtn rdbtn-primary radiolbl" id="rdb-primary" value='1' name="rad_Child" ><label for="rdb-primary">มี</label>
-      <input type="radio" class="rdbtn rdbtn-primary radiolbl" id="rdb-success" value='2' name="rad_Child" checked ><label for="rdb-success">ไม่มี</label>
-
-
+                            <input type="radio" class="rdbtn rdbtn-primary radiolbl" id="rdb-primary" value='1' name="rad_Child"><label for="rdb-primary">มี</label>
+                            <input type="radio" class="rdbtn rdbtn-primary radiolbl" id="rdb-success" value='2' name="rad_Child" checked><label for="rdb-success">ไม่มี</label>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="divHealthy_Input_2" class="row" style="display:none">
-                <h1 class="text-center">  <a href="#step-1" type="button" class="btn btn-primary btn-circle">2</a> ข้อมูลทางการเงิน    </h1>
+                <h1 class="text-center">  <!--<a href="#step-1" type="button" class="btn btn-primary btn-circle">2</a>--> ข้อมูลทางการเงิน    </h1>
 
                 <div class="col-md-12">
 
@@ -120,10 +109,10 @@
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-6 text-right">
                                 <input type="text" id="txt_hl_income" value="0" maxlength="11" required>
-                             </div>
-                                   <!--<span class="highlight"></span>-->
-                                <!--<span class="bar"></span>-->
                             </div>
+                            <!--<span class="highlight"></span>-->
+                            <!--<span class="bar"></span>-->
+                        </div>
 
                         <div class="group">
                             <div class="col-md-6 col-sm-6 col-xs-6  text-left">
@@ -239,10 +228,28 @@
             </div>
 
             <div id="divHealthy_OutPut" class="row" style="display:none">
-                <h1 class="text-center">  <a href="#step-1" type="button" class="btn btn-primary btn-circle">3</a> ข้อมูลทางการเงิน    </h1>
+                <h1 class="text-center">  <!--<a href="#step-1" type="button" class="btn btn-primary btn-circle">3</a>-->  วิเคราะห์สุขภาพทางการเงิน </h1>
 
+                <div class="col-md-12 center-block text-center">
+                    <div class="box" style="margin-left:auto;margin-right:auto;">
+
+                        <select class="wide">
+                            <!--<option data-display="Select">Nothing</option>-->
+                            <option value="1">
+                                1. คุณมีสภาพคล่องเพียงพอหรือไม่?
+                            </option>
+                            <option value="2">2. คุณมีหนี้สินมากเกินไปหรือไม่?</option>
+                            <option value="3">3. คุณมีภารในการผ่อนชำระหนี้สินทั้งหมด  ต่อเดือนสูงเกินไปหรือไม่?</option>
+                            <option value="4">4. คุณมีภารในการผ่อนชำระหนี้สินที่ไม่ใช่การจดจำนอง ต่อเดือนสูงเกินไปหรือไม่?</option>
+                            <option value="5">5. ทุกวันนี้คุณออมเงินในสัดส่วนที่เหมาะสมหรือไม่? </option>
+                            <option value="6">
+                                6. ระดับสินทรพย์ที่ครวมี ณ ปัจจุบัน
+                            </option>
+                        </select>
+                    </div>
+                </div>
                 <div id="divHealthy_Output_1" class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="col-md-12  text-center"><h2>  1. คุณมีสภาพคล่องเพียงพอหรือไม่?</h2></div>
+                    <!--<div class="col-md-12  text-center"><h2>  1. คุณมีสภาพคล่องเพียงพอหรือไม่?</h2></div>-->
 
                     <div class="col-md-12">
 
